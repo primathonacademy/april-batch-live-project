@@ -1,0 +1,23 @@
+[
+    {
+      "title": "WORK",
+      "link": "#work",
+      "isBold": true
+    },
+    {
+      "title": "SERVICES",
+      "link": "#services"
+    },
+    {
+      "title": "INSIGHTS",
+      "link": "#insights"
+    },
+    {
+      "title": "ABOUT US",
+      "link": "#about"
+    },
+    {
+      "title": "LABS",
+      "link": "#labs"
+    }
+  ]
