@@ -56,7 +56,7 @@ const Header = () => {
                     <div className={`hidden md:flex flex-row gap-4`}>
                         {headerJSON.map((link, index) => (
                             <button
-                                key={index}
+                                key={`header-${index}`}
                                 className={`md:text-xs lg:text-sm xl:text-base text-[#2F3750] ${
                                     link.isBold ? 'font-semibold' : 'font-light'
                                 } lg:w-24 2xl:w-28`}>
@@ -76,7 +76,7 @@ const Header = () => {
       } px-9 pt-[100px] text-center text-[28px] text-[#2F3750] tracking-tight leading-[60px] items-start flex md:hidden flex-col
       `}>
                 {headerJSON.map((link, index) => (
-                    <p key={index} className={`${link.isBold ? 'font-semibold' : ''}`}>
+                    <p key={`menu-${index}`} className={`${link.isBold ? 'font-semibold' : ''}`}>
                         {link.title}
                     </p>
                 ))}
