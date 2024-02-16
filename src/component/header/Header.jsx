@@ -58,13 +58,13 @@ const Header = () => {
                             <button
                                 key={`header-${index}`}
                                 className={`md:text-xs lg:text-sm xl:text-base text-[#2F3750] ${
-                                    link.isBold ? 'font-semibold' : 'font-light'
+                                    link.isBold ? 'hover:font-semibold' : 'font-light'
                                 } lg:w-24 2xl:w-28`}>
                                 {link.title}
                             </button>
                         ))}
                     </div>
-                    <button className="hidden md:flex md:rounded-3xl xl:rounded-[32px] bg-[#0A66EC] md:text-[10px] lg:text-xs xl:text-sm text-white px-6 py-3.5 ">
+                    <button className="hidden md:flex md:rounded-3xl xl:rounded-[32px] bg-[#0A66EC] transition duration-500 ease-in-out transform hover:scale-110 hover:bg-gradient-to-r hover:from-[#0A66EC] hover:to-[#F46997] md:text-[10px] lg:text-xs xl:text-sm text-white px-6 py-3.5 ">
                         CONTACT US
                     </button>
                 </div>
