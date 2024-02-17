@@ -1,0 +1,108 @@
+.containerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 40px 36px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1440px) {
+    padding: 24px 24px 28px;
+  }
+}
+
+.leftContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  column-gap: 24px;
+  opacity: 1;
+
+  @media only screen and (max-width: 1440px) {
+    column-gap: 14px;
+  }
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 68px;
+}
+
+.leftNavbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-transform: uppercase;
+}
+
+.leftNavbarMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-transform: uppercase;
+
+  @media only screen and (max-width: 1440px) {
+    align-items: start;
+    justify-content: center;
+    height: calc(100vh - 240px);
+    padding: 24px;
+  }
+}
+
+.navbarItem {
+  color: #2f3750;
+  opacity: 0.8;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: min-content;
+  z-index: 2;
+  text-decoration: none;
+}
+.navbarItem:hover {
+  color: #2f3750;
+  opacity: 1;
+}
+
+.rightNavbar {
+  padding: 12px 20px;
+  overflow: hidden;
+  background-color: #0a66ec;
+  border-radius: 32px;
+  color: #fff;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.yumiLabLogo {
+  width: 24px;
+  cursor: pointer;
+
+  @media only screen and (max-width: 1440px) {
+    width: 18px;
+  }
+}
+
+.yumiLabIcon {
+  width: 182px;
+  cursor: pointer;
+
+  @media only screen and (max-width: 1440px) {
+    width: 144px;
+  }
+}
+
+.toggleIcon {
+  fill: #253F9C
+}
+
+.toggleIcon svg path { fill: orange; }
