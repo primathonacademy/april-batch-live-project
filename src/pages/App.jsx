@@ -9,20 +9,21 @@ import InsightDetail from './insight-detail';
 import Work from './work';
 import Service from './service';
 import Homepage from './homepage';
+import { ROUTES } from '../constants/app-constant';
 
 const App = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route element={<Layout />}>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="about" element={<About />} />
-                    <Route path="contact" element={<Contact />} />
-                    <Route path="casestudy" element={<CaseStudy />} />
-                    <Route path="insights" element={<Insight />} />
-                    <Route path="insightdetails" element={<InsightDetail />} />
-                    <Route path="work" element={<Work />} />
-                    <Route path="service" element={<Service />} />
+                    <Route path={ROUTES.HOME} element={<Homepage />} />
+                    <Route path={ROUTES.ABOUT} element={<About />} />
+                    <Route path={ROUTES.CONTACT} element={<Contact />} />
+                    <Route path={ROUTES.CASE_STUDY} element={<CaseStudy />} />
+                    <Route path={ROUTES.INSIGHT} element={<Insight />} />
+                    <Route path={ROUTES.INSIGHT_DETAIL} element={<InsightDetail />} />
+                    <Route path={ROUTES.WORK} element={<Work />} />
+                    <Route path={ROUTES.SERVICE} element={<Service />} />
                     {/* 404 */}
                     <Route path="*" element={<h1>404 — Page Not Found</h1>} />
                 </Route>
