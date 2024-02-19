@@ -20,8 +20,8 @@ const Header = () => {
     }, [windowWidth]);
 
     return (
-        <div className="w-full sticky top-0 z-50">
-            <div className="flex justify-between p-6 md:py-5 md:px-16 lg:px-20 xl:px-28 2xl:px-36 items-center bg-white bg-opacity-50 backdrop-blur-md">
+        <div className="w-full sticky top-0 bg-white z-50">
+            <div className="flex justify-between p-6 md:py-5 md:px-16 lg:px-20 xl:px-28 2xl:px-36 items-center bg-opacity-50 backdrop-blur-md">
                 <a href="/">
                     <img src="/icons/brand-logo.svg" alt="Brand logo" className="object-cover h-5 lg:h-6" />
                 </a>
