@@ -30,27 +30,27 @@ const Header = () => {
                     }`}>
                     <ul className="flex gap-12 lg:flex-row flex-col mt-56 lg:mt-0 font-sans nav-items">
                         <li className="text-7  text-normal font-semibold lg:font-normal hover:lg:font-semibold lg:text-base hover:text-hover">
-                            <a className="transition-all duration-200 ease-out" href="/work">
+                            <a className={`${TransitionEaseOut}`} href="/work">
                                 WORK
                             </a>
                         </li>
                         <li className="text-7 text-normal font-semibold lg:font-normal hover:lg:font-semibold lg:text-base hover:text-hover">
-                            <a className="transition-all duration-200 ease-out" href="/services">
+                            <a className={`${TransitionEaseOut}`} href="/services">
                                 SERVICES
                             </a>
                         </li>
                         <li className="text-7 text-normal font-semibold lg:font-normal hover:lg:font-semibold lg:text-base hover:text-hover">
-                            <a className="transition-all duration-200 ease-out" href="/insights">
+                            <a className={`${TransitionEaseOut}`} href="/insights">
                                 INSIGHTS
                             </a>
                         </li>
                         <li className="text-7 text-normal font-semibold lg:font-normal hover:lg:font-semibold lg:text-base hover:text-hover">
-                            <a className="transition-all duration-200 ease-out" href="/about">
+                            <a className={`${TransitionEaseOut}`} href="/about">
                                 ABOUT US
                             </a>
                         </li>
                         <li className="text-7 text-normal font-semibold lg:font-normal hover:lg:font-semibold lg:text-base hover:text-hover">
-                            <a className="transition-all duration-200 ease-out" href="/labs">
+                            <a className={`${TransitionEaseOut}`} href="/labs">
                                 LABS
                             </a>
                         </li>
