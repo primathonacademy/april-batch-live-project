@@ -1,16 +1,14 @@
+// import { data } from "autoprefixer";
 import { useEffect, useState } from "react";
+import headerJSON from '../../data/header.json';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("WORK");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const setActive = (link) => {
-    setActiveLink(link);
-  };
+ 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -26,64 +24,27 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 w-full bg-white z-50  ">
-      <div className=" container mx-auto px-3">
-        <div className="flex justify-between  items-center py-4">
-          <div className="flex  gap-2 md:gap-8  justify-center items-center">
-            <img src="/src/assets/logo.svg" alt="" className="" />
-            <img src="/src/assets/logo+.svg" alt="" />
+    <div className="fixed w-full">
+      <div className="flex justify-between p-6 md:p-0 md:py-5 z-50 md:px-16 lg:px-20 xl:px-28 2xl:px-36 items-center bg-white bg-opacity-50 backdrop-blur-md">
+          <div className="flex justify-center gap-x-3.5">
+            <img src="/src/assets/brand-logo.svg" className="w-4 h-6 2xl:w-6 2xl:h-8" />
+            <img src="/src/assets/yume-labs-logo.svg" className="w-36 md:w-30 md:h-5 xl:w-44 2xl:h-6 mt-1"/>
           </div>
-          <div className="hidden md:block">
-            <ul className="flex gap-24 md:gap-5 xl:gap-24  lg:gap-16  items-center font-semibold text-gray-400 ">
-              <li>
-                <a
-                  href="#"
-                  className={`text-gray-400 ${
-                    activeLink === "WORK" ? "text-gray-700" : ""
-                  }`}
-                  onClick={() => setActive("WORK")}
-                >
-                  WORK
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-gray-400 ${
-                    activeLink === "SERVICES" ? "text-gray-700" : ""
-                  }`}
-                  onClick={() => setActive("SERVICES")}
-                >
-                  SERVICES
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-gray-400 ${
-                    activeLink === "ABOUT US" ? "text-gray-700" : ""
-                  }`}
-                  onClick={() => setActive("ABOUT US")}
-                >
-                  ABOUT US
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className={`text-gray-400 ${
-                    activeLink === "LABS" ? "text-gray-700" : ""
-                  }`}
-                  onClick={() => setActive("LABS")}
-                >
-                  LABS
-                </a>
-              </li>
-              <button className="bg-[#0A66EC] text-white rounded-full opacity-1 px-8 py-3 text-opacity-90 hover:bg-gradient-to-r from-blue-600 from-30%  to-pink-400">
-                <a href="#">CONTACT US</a>
-              </button>
-            </ul>
-          </div>
+          <div className={`hidden md:flex justify-center items-center gap-4`}>
+                        {headerJSON.map((link, index) => (
+                            <a
+                                key={`header-${index}`}
+                                className={`md:text-xs lg:text-sm xl:text-base text-[#2F3750] font-normal hover:font-semibold cursor-pointer lg:w-24 2xl:w-28`}>
+                                {link.title}
+                            </a>
+                        ))}
+                        <a
+                       className="hidden md:flex md:rounded-3xl xl:rounded-[32px] bg-[#0A66EC] transition duration-500 ease-in-out font-base focus:font-semibold transform focus:scale-100 hover:bg-gradient-to-r hover:from-[#0A66EC] hover:to-[#F46997] md:text-[10px] lg:text-xs xl:text-sm text-white px-6 py-3.5 ">
+                        CONTACT US
+                        </a>
+                         
+                    </div>
+                   
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
@@ -101,59 +62,18 @@ const Header = () => {
           </div>
         </div>
         <div
-          className={`space-y-4 px-4 mt-16 py-7 transition-all duration-300 ease-in  ${
-            isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
-          }`}
-        >
-          <ul className="flex flex-col gap-4 mt-8">
-            <li>
-              <a
-                href="#"
-                className={`block font-semibold text-gray-400 ${
-                  activeLink === "WORK" ? "text-gray-700" : ""
-                }`}
-                onClick={() => setActive("WORK")}
-              >
-                WORK
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block font-semibold text-gray-400 ${
-                  activeLink === "SERVICES" ? "text-gray-700" : ""
-                }`}
-                onClick={() => setActive("SERVICES")}
-              >
-                SERVICES
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block font-semibold text-gray-400 ${
-                  activeLink === "ABOUT US" ? "text-gray-700" : ""
-                }`}
-                onClick={() => setActive("ABOUT US")}
-              >
-                ABOUT US
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`block font-semibold text-gray-400 ${
-                  activeLink === "LABS" ? "text-gray-700" : ""
-                }`}
-                onClick={() => setActive("LABS")}
-              >
-                LABS
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+                className={`bg-white transition-all duration-400 bg-opacity-50 backdrop-blur-md
+      ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+      } px-9 pt-[100px] text-center text-[28px] text-[#828796] tracking-tight leading-[60px] font-light items-start flex md:hidden flex-col
+      `}>
+                {headerJSON.map((link, index) => (
+                    <a key={`menu-${index}`} className={`font-extralight hover:font-medium cursor-pointer`}>
+                        {link.title}
+                    </a>      
+                    ))}
+                    </div>
+                 </div>
   );
 };
 
