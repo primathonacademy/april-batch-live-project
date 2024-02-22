@@ -4,14 +4,18 @@ export default {
     theme: {
         extend: {
             fontSize: {
-                7: '28px'
+                '2.5xl': '1.75rem'
             },
             borderRadius: {
-                4: '32px'
+                4: '2rem'
             },
             colors: {
-                normal: '#828796',
-                hover: '#2f3750'
+                'light-gray': '#828796',
+                'dark-gray': '#2f3750'
+            },
+            height: {
+                'navbar-mobile': '97vh',
+                'toggle-span': '0.1875rem'
             }
         }
     },
