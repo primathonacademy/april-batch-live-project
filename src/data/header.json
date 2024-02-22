@@ -1,0 +1,24 @@
+[ 
+    {
+
+    "title":"Work",
+    "link" :"/work"
+
+},
+{
+    "title": "Services",
+    "link": "/services"
+},
+{
+    "title": "Isights",
+    "link": "/insights"
+},
+{
+    "title": "About Us",
+    "link": "/about"
+},
+{
+    "title": "Labs",
+    "link": "/labs"
+}
+]
