@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import useResizeHandler from '../utils/ResizeHandler';
+import useScreenResizeHandler from '../utils/ScreenResizeHandler';
 import { TransitionEaseOut } from '../utils/tailwindConstants';
 
 const NavElements = () => {
@@ -25,7 +25,7 @@ const Header = () => {
         setIsNavOpen(!isNavOpen);
     };
 
-    useResizeHandler(setIsNavOpen);
+    useScreenResizeHandler(setIsNavOpen);
     return (
         <header className="px-9 p-6 backdrop-blur-18">
             <div className="mx-auto flex justify-between items-center max-w-screen-2xl">

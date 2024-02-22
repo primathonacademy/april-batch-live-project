@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function useResizeHandler(callback) {
+export default function useScreenResizeHandler(callback) {
     useEffect(() => {
         const checkScreenSize = () => {
             if (window.innerWidth >= 1024) {
