@@ -11,8 +11,8 @@ export default {
                 'accent-blue': '#253F9C'
             },
             borderRadius: {
-                '4xl': '28px',
-                '5xl': '32px'
+                '4xl': '1.75rem',
+                '5xl': '2rem'
             }
         }
     },

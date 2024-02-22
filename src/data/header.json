@@ -1,22 +1,22 @@
 [
     {
-        "title": "WORK",
-        "link": "#work"
+        "title": "Work",
+        "link": "/work"
     },
     {
-        "title": "SERVICES",
-        "link": "#services"
+        "title": "services",
+        "link": "/services"
     },
     {
-        "title": "INSIGHTS",
-        "link": "#insights"
+        "title": "Insights",
+        "link": "/insights"
     },
     {
-        "title": "ABOUT US",
-        "link": "#about"
+        "title": "About Us",
+        "link": "/about"
     },
     {
-        "title": "LABS",
-        "link": "#labs"
+        "title": "Labs",
+        "link": "/labs"
     }
 ]
