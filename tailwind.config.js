@@ -11,10 +11,15 @@ export default {
             colors: {
                 'header-gray': '#2F3750',
                 'fade-gray': '#828796',
+                'light-gray':'#0B1226',
                 'brand-blue': '#0A66EC',
+                'dark-blue':'#253F9C',
                 'brand-pink': '#F46997',
-                'accent-blue': '#253F9C'
-            },
+                'fade-orange':'#E5C090',
+                'accent-blue': '#253F9C',
+                'light-pink':'#F7F7F7',
+                'red-gray':'#696969'   
+                     },
             borderRadius: {
                 '4xl': '1.75rem',
                 '5xl': '2rem'
