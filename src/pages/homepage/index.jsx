@@ -6,6 +6,7 @@ const Homepage = () => {
             <GetInTouch />
         </div>
     );
+
 };
 
 export default Homepage;
