@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { scrollHandler } from "../../utils/ScrollHandler";
-import Homepage from ".";
+
 
 const OurServices = () => {
   useEffect(() => {
@@ -41,8 +41,7 @@ const OurServices = () => {
 
   return (
     <>
-    <Homepage/>
-      <div className="flex flex-col md:flex-row items-stretch justify-center mt-16 gap-2 mx-4">
+      <div className="flex flex-col md:flex-row items-stretch justify-center mt-16 gap-2 mx-4 overflow-hidden">
         <div className="bg-light-pink w-full md:w-[508px] mt-16 rounded-xl flex flex-col justify-center items-center service-item-1">
           <h1 className="lg:mt-6 md:mt-24 text-3xl md:text-5xl px-6 md:px-20 font-poppins">Innovation is the New Marketing.</h1>
           <p className="mt-3 md:mt-9 text-red-gray font-semibold opacity-60 text-lg md:text-2xl px-6 md:px-20 font-roboto">Build your brand moat with us and leave the competition in the dust.</p>
