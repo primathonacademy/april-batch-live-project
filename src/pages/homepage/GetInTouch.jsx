@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import rightArrow from '../../../public/icons/right-arrow.svg';
+import rightArrow from '../../assets/icons/right-arrow.svg';
 
 const GetInTouch = () => {
     return (
