@@ -14,7 +14,9 @@
     "dependencies": {
         "@gsap/react": "^2.1.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "split-text": "^1.0.0",
+        "split-type": "^0.3.4"
     },
     "devDependencies": {
         "@types/react": "^18.2.55",
