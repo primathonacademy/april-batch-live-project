@@ -15,7 +15,10 @@ export const ROUTES = {
     INSIGHT: '/insights',
     INSIGHT_DETAIL: '/insight-detail',
     WORK: '/work',
-    SERVICE: '/service'
+    SERVICE: '/service',
+    PRIVACY_POLICY: '/privacy-policy',
+    TERMS_OF_USE: '/terms-of-use',
+    COPYRIGHT: '/copyright-yume-labs'
 };
 
 export const NAV_ITEMS = [
@@ -38,5 +41,24 @@ export const NAV_ITEMS = [
     {
         title: 'Labs',
         link: ROUTES.CASE_STUDY
+    },
+    {
+        title: 'Contact Us',
+        link: ROUTES.CONTACT
+    }
+];
+
+export const IMPORTANT_PAGES = [
+    {
+        title: 'Privacy Policy',
+        link: ROUTES.PRIVACY_POLICY
+    },
+    {
+        title: 'Terms of Use',
+        link: ROUTES.TERMS_OF_USE
+    },
+    {
+        title: 'Copyright Yume Labs',
+        link: ROUTES.COPYRIGHT
     }
 ];

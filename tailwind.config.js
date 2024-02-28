@@ -38,6 +38,9 @@ export default {
             padding: {
                 45: '11.25rem',
                 90: '22.5rem'
+            },
+            fontSize: {
+                xxs: '0.625rem'
             }
         }
     },
