@@ -1,4 +1,4 @@
-import WorkComponent from './WorkComponent';
+import WorkComponent from '../../components/WorkComponent';
 
 const Homepage = () => {
     return (

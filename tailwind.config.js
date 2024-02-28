@@ -32,11 +32,6 @@ export default {
                 95: '23.75rem',
                 100: '25rem'
             },
-            fontSize: {
-                '11xl': '5rem',
-                '8xl' : '3.5rem',
-                '6xl': '2.25rem'
-            },
             lineHeight: {
                 tighter: '4rem'
             },
