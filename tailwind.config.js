@@ -13,7 +13,9 @@ export default {
                 'fade-gray': '#828796',
                 'brand-blue': '#0A66EC',
                 'brand-pink': '#F46997',
-                'accent-blue': '#253F9C'
+                'accent-blue': '#253F9C',
+                'light-gray': '#ddd',
+                'light-brown':'#696969'
             },
             borderRadius: {
                 '4xl': '1.75rem',
