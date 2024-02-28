@@ -1,20 +1,38 @@
 import { Link } from 'react-router-dom';
+import { IMPORTANT_PAGES, NAV_ITEMS } from '../constants/app-constant';
 
-import { brandLogo, instagramIcon, linkedinIcon, twitterIcon } from '../../public';
+import { brandLogo, instagramIcon, linkedinIcon, twitterIcon } from '../assets';
+
+const NavElements = () => {
+    return (
+        <nav className="text-header-gray text-lg md:text-2xl flex flex-col gap-7 md:gap-7">
+            {NAV_ITEMS.map((element, i) => (
+                <Link key={`index-${i}`} to={element.link}>
+                    {element.title}
+                </Link>
+            ))}
+        </nav>
+    );
+};
+
+const ImportantPagesLinks = () => {
+    return (
+        <div className="flex gap-10 justify-between items-center w-full md:w-auto">
+            {IMPORTANT_PAGES.map((item, i) => (
+                <Link key={`index-${i}`} to={item.link} className="text-accent-blue md:text-base sm:text-xs text-xxs">
+                    {item.title}
+                </Link>
+            ))}
+        </div>
+    );
+};
 
 const Footer = () => {
     return (
         <footer className="px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36 bg-neutral-100 pt-24">
             <div className="flex flex-col md:flex-row justify-between gap-10 flex-wrap">
                 <div className="flex-1 justify-between">
-                    <nav className="text-header-gray text-lg md:text-2xl flex flex-col gap-7 md:gap-7">
-                        <Link to="/work">Work</Link>
-                        <Link to="/service">Services</Link>
-                        <Link to="/insights">insights</Link>
-                        <Link to="/about">About Us</Link>
-                        <Link to="/labs">Labs</Link>
-                        <Link to="/contact">Contact Us</Link>
-                    </nav>
+                    <NavElements />
                 </div>
                 <address className="flex-1 flex justify-between flex-col gap-4 not-italic">
                     <div>
@@ -47,17 +65,7 @@ const Footer = () => {
                 <Link to="/">
                     <img src={`${brandLogo}`} alt="brand logo" className="h-5 lg:h-6" />
                 </Link>
-                <div className="flex gap-10 justify-between items-center w-full md:w-auto">
-                    <Link to="/privacy-policy" className="text-accent-blue md:text-base sm:text-xs text-xxs">
-                        Privacy Policy
-                    </Link>
-                    <Link to="/terms-of-use" className="text-accent-blue md:text-base sm:text-xs text-xxs">
-                        Terms of Use
-                    </Link>
-                    <Link to="/copyright-yume-labs" className="text-accent-blue md:text-base sm:text-xs text-xxs">
-                        Copyright Yume Labs
-                    </Link>
-                </div>
+                <ImportantPagesLinks />
             </div>
         </footer>
     );

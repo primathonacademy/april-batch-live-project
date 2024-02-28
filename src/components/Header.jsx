@@ -3,6 +3,10 @@ import useWindowResize from '../utils/windowResizeUtils';
 import { SCREEN_SIZE, NAV_ITEMS } from '../constants/app-constant';
 import { useLocation } from 'react-router-dom';
 
+import { brandLogo } from '../assets';
+
+const NAV_ITEMS_EXCLUDING_LAST = NAV_ITEMS.slice(0, -1);
+
 const Header = () => {
     const windowWidth = useWindowResize();
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -23,7 +27,7 @@ const Header = () => {
         <div className="w-full sticky top-0 z-50">
             <div className="flex justify-between p-6 md:py-5 md:px-16 lg:px-20 xl:px-28 2xl:px-36 items-center bg-white bg-opacity-50 backdrop-blur-md">
                 <a href="/">
-                    <img src="/icons/brand-logo.svg" alt="Brand logo" className="object-cover h-5 lg:h-6" />
+                    <img src={`${brandLogo}`} alt="Brand logo" className="object-cover h-5 lg:h-6" />
                 </a>
 
                 <div className="flex justify-end items-center text-center md:gap-6 lg:gap-8 xl:gap-12 2xl:gap-16">
@@ -42,7 +46,7 @@ const Header = () => {
                             ${isMenuOpen ? '' : '-translate-y-0'}`}></div>
                     </button>
                     <nav className="hidden md:flex  2xl:gap-4">
-                        {NAV_ITEMS.map((nav, index) => (
+                        {NAV_ITEMS_EXCLUDING_LAST.map((nav, index) => (
                             <a
                                 href={nav.link}
                                 key={`header-${index}`}
@@ -65,7 +69,7 @@ const Header = () => {
                     className="flex flex-col -z-10 bg-white transition-all duration-400 bg-opacity-50 backdrop-blur-md
                         px-9 pt-24 text-center text-3xl text-fade-gray tracking-tight leading-10 gap-6 font-light items-start md:hidden h-screen
                         ">
-                    {NAV_ITEMS.map((nav, index) => (
+                    {NAV_ITEMS_EXCLUDING_LAST.map((nav, index) => (
                         <a
                             href={nav.link}
                             key={`menu-${index}`}

@@ -20,7 +20,7 @@ export default {
                 '5xl': '2rem'
             },
             fontSize: {
-                xxs: '10px'
+                xxs: '0.625rem'
             }
         }
     },
