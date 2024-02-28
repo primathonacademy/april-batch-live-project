@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
-import { ourServiceImage1, ourServiceImage2, ourServiceImage3, rightArrowIcon } from "../../assets/images";
+import { ourServiceImage1, ourServiceImage2, ourServiceImage3, rightArrowIcon } from "../../assets";
 import { scrollHandler } from "../../utils/ScrollHandler";
 import useWindowResize from "../../utils/windowResizeUtils";
 
@@ -11,35 +11,12 @@ const OurServices = () => {
 
     if (useWindowResize) {
       gsap.registerPlugin(ScrollTrigger);
-
-      gsap.utils.toArray('.service-item-1').forEach((element) => {
-        gsap.from(element, {
-          y: 10,
-          duration: 2,
-          scrollTrigger: {
-            trigger: element,
-            scrub: true,
-          },
-        });
-        gsap.to(element, {
-          y: 10,
-          duration: 2,
-          scrollTrigger: {
-            trigger: element,
-            start: "top 80%",
-            end: "bottom 20%",
-            scrub: true,
-          },
-        });
-      });
-
       const cleanupScrollHandler = scrollHandler();
       return () => {
         cleanupScrollHandler();
       };
     }
   }, []);
-
   return (
     <>
       <div className="flex flex-col md:flex-row items-stretch justify-center mt-16 gap-2 mx-4 overflow-hidden">
