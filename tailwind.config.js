@@ -20,6 +20,9 @@ export default {
             borderRadius: {
                 '4xl': '1.75rem',
                 '5xl': '2rem'
+            },
+            fontSize: {
+                xxs: '0.625rem'
             }
         }
     },
