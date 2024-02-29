@@ -1,9 +1,13 @@
-import OurServices from "./OurService";
+import HeroSection from './HeroSection';
+import OurServices from './OurService';
 
 const Homepage = () => {
-    return <div>
-        <OurServices/>
-    </div>;
+    return (
+        <div>
+            <HeroSection />
+            <OurServices />
+        </div>
+    );
 };
 
 export default Homepage;

@@ -12,19 +12,28 @@ export default {
                 'header-gray': '#2F3750',
                 'fade-gray': '#828796',
                 'brand-blue': '#0A66EC',
-                'dark-blue':'#253F9C',
+                'dark-blue': '#253F9C',
                 'brand-pink': '#F46997',
                 'accent-blue': '#253F9C',
-                'fade-orange':'#E5C090',
-                'fade-white': "#F7F7F7",
-                'fade-blue-white':'#F4F8FF'
+                'fade-orange': '#E5C090',
+                'fade-white': '#F7F7F7',
+                'fade-blue-white': '#F4F8FF'
             },
             borderRadius: {
                 '4xl': '1.75rem',
                 '5xl': '2rem'
             },
             fontSize: {
-                xxs: '0.625rem'
+                xxs: '0.625rem',
+                '7.5xl': '5rem',
+                '4.5xl': '2.5rem'
+            },
+            height: {
+                150: '37.5rem'
+            },
+            lineHeight: {
+                15: '3.75rem',
+                22.5: '5.625rem'
             }
         }
     },
