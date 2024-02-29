@@ -7,3 +7,10 @@ export { default as linkedinIcon } from './icons/icon-linkedin.svg';
 export { default as twitterIcon } from './icons/icon-twitter.svg';
 export { default as brandLogo } from './icons/brand-logo.svg';
 
+export {default as custloveicon} from '/src/assets/images/customerloveIcon.png';
+export {default as custimage1} from '/src/assets/images/custimage.png';
+export {default as leftbtnarrow} from '/src/assets/images/leftBtn1x.png';
+export {default as rightbtnarrow} from '/src/assets/images/rightBtn1x.png';
+export {default as gridimage} from '/src/assets/images/GridImage.png';
+
+
