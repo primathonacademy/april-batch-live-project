@@ -9,3 +9,7 @@
         font-family: "Roboto", system-ui, sans-serif;
     }
 }
+.active {
+    @apply font-semibold;
+}
+
