@@ -8,5 +8,5 @@ export { default as twitterIcon } from './icons/icon-twitter.svg';
 export { default as brandLogo } from './icons/brand-logo.svg';
 export {default as technologyImage} from './images/technology.png';
 export {default as theArtPosterImage} from './images/the-art-poster.png';
-export {default as gridlineBgImage} from './images/gridline-bg.png'
-
+export {default as gridlineBgImage} from './images/gridline-bg.png;
+export { default as rightArrow } from './icons/right-arrow.svg';
