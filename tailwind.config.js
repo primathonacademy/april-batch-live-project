@@ -26,10 +26,11 @@ export default {
             fontSize: {
                 xxs: '0.625rem',
                 '7.5xl': '5rem',
-                '4.5xl': '2.5rem'
+                '4.5xl': '2.875rem'
             },
             height: {
-                150: '37.5rem'
+                212: '53.125rem',
+                159: '39.875rem'
             },
             lineHeight: {
                 15: '3.75rem',
