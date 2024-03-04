@@ -1,11 +1,12 @@
-import OurServices from "./OurService";
+import OurServices from './OurService';
 import WorkComponent from './WorkComponent';
 
 const Homepage = () => {
     return (
         <>
-            <OurServices/>
+            <OurServices />
             <WorkComponent />
         </>
     );
+};
 export default Homepage;

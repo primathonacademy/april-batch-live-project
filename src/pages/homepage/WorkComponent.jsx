@@ -1,9 +1,8 @@
 import { Fragment, useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { NavLink } from 'react-router-dom';
-import portfolioArrow from '../../../public/icons/arrow-blue-circle.svg';
 import scrollHandler from '../../utils/scrollHandlerUtils';
-import { workImg1, workImg2, workImg3, workImg4 } from '../../assets/index';
+import { workImg1, workImg2, workImg3, workImg4, forwardArrow } from '../../assets';
 
 const WorkComponent = () => {
     const boxRefs = useRef([]);
@@ -122,7 +121,7 @@ const WorkComponent = () => {
                         </h1>
                         <div className="flex w-10 h-10 xl:w-14 xl:h-14">
                             <img
-                                src={portfolioArrow}
+                                src={forwardArrow}
                                 alt="forward arrow icon"
                                 className="object-fit hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-10% hover:to-pink-bg-color"
                             />

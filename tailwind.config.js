@@ -12,7 +12,7 @@ export default {
                 'header-gray': '#2F3750',
                 'fade-gray': '#828796',
                 'brand-blue': '#0A66EC',
-                'dark-blue':'#253F9C',
+                'dark-blue': '#253F9C',
                 'brand-pink': '#F46997',
                 'accent-blue': '#253F9C',
                 'gray-bg-color': '#F4F8FF',
@@ -20,10 +20,10 @@ export default {
                 'portfolio-button-color': '#253F9C',
                 'section-quote': '#272727',
                 'section-box-heading-color': '#0B1226',
-                'section-box-paragraph-color': '#7B7B7B'
-                'fade-orange':'#E5C090',
-                'fade-white': "#F7F7F7",
-                'fade-blue-white':'#F4F8FF'
+                'section-box-paragraph-color': '#7B7B7B',
+                'fade-orange': '#E5C090',
+                'fade-white': '#F7F7F7',
+                'fade-blue-white': '#F4F8FF'
             },
             borderRadius: {
                 '4xl': '1.75rem',
