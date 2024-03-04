@@ -1,9 +1,12 @@
-import OurServices from "./OurService";
+import OurServices from './OurService';
+import GetInTouch from './GetInTouch';
 
 const Homepage = () => {
-    return <div>
-        <OurServices/>
-    </div>;
+    return (
+        <>
+            <OurServices />
+            <GetInTouch />
+        </>
+    );
 };
-
 export default Homepage;
