@@ -11,3 +11,4 @@ export { default as linkedinIcon } from './icons/icon-linkedin.svg';
 export { default as twitterIcon } from './icons/icon-twitter.svg';
 export { default as brandLogo } from './icons/brand-logo.svg';
 export { default as forwardArrow } from './icons/forward-arrow.svg';
+export { default as rightArrow } from './icons/right-arrow.svg';
