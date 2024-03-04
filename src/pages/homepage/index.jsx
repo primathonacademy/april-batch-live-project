@@ -1,13 +1,14 @@
 import HeroSection from './HeroSection';
 import OurServices from './OurService';
+import GetInTouch from './GetInTouch';
 
 const Homepage = () => {
     return (
-        <div>
+        <>   
             <HeroSection />
             <OurServices />
-        </div>
+            <GetInTouch />
+        </>
     );
 };
-
 export default Homepage;
