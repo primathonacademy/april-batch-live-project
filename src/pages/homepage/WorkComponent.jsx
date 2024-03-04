@@ -2,7 +2,7 @@ import { Fragment, useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { NavLink } from 'react-router-dom';
 import scrollHandler from '../../utils/scrollHandlerUtils';
-import { workImg1, workImg2, workImg3, workImg4, forwardArrow } from '../../assets';
+import { workImg1, workImg2, workImg3, workImg4, rightArrow } from '../../assets';
 
 const WorkComponent = () => {
     const boxRefs = useRef([]);
@@ -115,16 +115,12 @@ const WorkComponent = () => {
                 <div className="flex justify-center w-full md:my-10">
                     <NavLink
                         to="/"
-                        className="flex items-center justify-between bg-gray-bg-color py-2 pr-2 pl-10 w-64 md:w-72 lg:w-80 2xl:w-95 rounded-full hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-50% hover:to-pink-bg-color">
-                        <h1 className="text-portfolio-button-color text-xs md:text-sm xl:text-base font-semibold">
+                        className="flex items-center justify-center cursor-pointer gap-8 2xs:gap-8 xs:gap-12 sm:gap-14 2xl:gap-20 py-1.5 xl:py-2 pl-5 sm:pl-7 xl:pl-10 bg-gray-bg-color rounded-full hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-30% hover:to-brand-pink">
+                        <h1 className="text-accent-blue text-xs sm:text-sm md:text-base xl:text-xl leading-5 md:leading-6 tracking-wide xs:tracking-wider xl:tracking-widest font-semibold">
                             EXPORT PORTFOLIO
                         </h1>
-                        <div className="flex w-10 h-10 xl:w-14 xl:h-14">
-                            <img
-                                src={forwardArrow}
-                                alt="forward arrow icon"
-                                className="object-fit hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-10% hover:to-pink-bg-color"
-                            />
+                        <div className="flex items-center justify-center rounded-full p-3.5 sm:p-4 xl:p-6 mr-1 xs:mr-1.5 xl:mr-2 bg-brand-blue hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-30% hover:to-brand-pink">
+                            <img src={rightArrow} alt="right arrow icon" className="w-3 h-3 sm:w-4 sm:h-4" />
                         </div>
                     </NavLink>
                 </div>
