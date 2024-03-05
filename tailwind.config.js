@@ -36,9 +36,7 @@ export default {
                 95: '23.75rem',
                 100: '25rem'
             },
-            lineHeight: {
-                tighter: '4rem'
-            },
+
             padding: {
                 45: '11.25rem',
                 90: '22.5rem'
@@ -54,7 +52,12 @@ export default {
             },
             lineHeight: {
                 15: '3.75rem',
-                22.5: '5.625rem'
+                22.5: '5.625rem',
+                tighter: '4rem'
+            },
+            backgroundImage: {
+                'gradient-linear':
+                    'linear-gradient(hsl(282, 33%, 88%), hsl(277, 41%, 88%), hsl(273, 48%, 87%), hsl(268, 55%, 87%), hsl(263, 63%, 86%), hsl(259, 70%, 86%), hsl(254, 77%, 86%), hsl(250, 85%, 86%), hsl(245, 92%, 86%), hsl(240, 100%, 86%))'
             }
         }
     },
