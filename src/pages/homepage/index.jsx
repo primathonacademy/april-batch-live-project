@@ -2,7 +2,8 @@ import HeroSection from './HeroSection';
 import OurServices from './OurService';
 import WorkComponent from './WorkComponent';
 import GetInTouch from './GetInTouch';
-import TheArt from "./TheArtSection";
+import TheArt from './TheArtSection';
+import OurServiceSection from './OurServiceSection';
 
 const Homepage = () => {
     return (
@@ -10,7 +11,8 @@ const Homepage = () => {
             <HeroSection />
             <OurServices />
             <WorkComponent />
-            <TheArt/>
+            <TheArt />
+            <OurServiceSection />
             <GetInTouch />
         </>
     );
