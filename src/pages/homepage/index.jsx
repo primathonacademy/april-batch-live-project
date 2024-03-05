@@ -1,18 +1,16 @@
-
-import OurServices from "./OurService";
-import TheArt from "./TheArtSection";
-const Homepage = () => {
-    return <div>
-        <OurServices/>
-        <TheArt/>
-    </div>;
+import HeroSection from './HeroSection';
 import OurServices from './OurService';
+import WorkComponent from './WorkComponent';
 import GetInTouch from './GetInTouch';
+import TheArt from "./TheArtSection";
 
 const Homepage = () => {
     return (
         <>
+            <HeroSection />
             <OurServices />
+            <WorkComponent />
+            <TheArt/>
             <GetInTouch />
         </>
     );
