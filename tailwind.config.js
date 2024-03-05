@@ -44,7 +44,17 @@ export default {
                 90: '22.5rem'
             },
             fontSize: {
-                xxs: '0.625rem'
+                xxs: '0.625rem',
+                '7.5xl': '5rem',
+                '4.5xl': '2.875rem'
+            },
+            height: {
+                212: '53.125rem',
+                159: '39.875rem'
+            },
+            lineHeight: {
+                15: '3.75rem',
+                22.5: '5.625rem'
             }
         }
     },
