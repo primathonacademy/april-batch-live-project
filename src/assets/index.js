@@ -13,3 +13,16 @@ export { default as brandLogo } from './icons/brand-logo.svg';
 export { default as heroPoster } from './homepage/hero-poster.png';
 export { default as bgGridLines } from './images/bg-grid-lines.png';
 export { default as rightArrow } from './icons/right-arrow.svg';
+
+// export {default as custloveicon} from './images/customerloveIcon.png';
+// export {default as custimage1} from './images/custimage.png';
+// export {default as leftbtnarrow} from './images/leftBtn.png';
+// export {default as rightbtnarrow} from './images/rightBtn.png';
+// export {default as gridimage} from './images/GridImage.png';
+
+export {default as custloveicon} from '/src/assets/images/customerloveIcon.png';
+export {default as custimage1} from '/src/assets/images/custimage.png';
+export {default as leftbtnarrow} from '/src/assets/images/leftbtn.png';
+export {default as rightbtnarrow} from '/src/assets/images/rightbtn.png';
+export {default as gridimage} from '/src/assets/images/gridimage.png';
+
