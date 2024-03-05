@@ -16,3 +16,4 @@ export { default as gridlineBgImage } from './images/gridline-bg.png';
 export { default as heroPoster } from './homepage/hero-poster.png';
 export { default as bgGridLines } from './images/bg-grid-lines.png';
 export { default as rightArrow } from './icons/right-arrow.svg';
+export { default as arrowDown } from './icons/Icon-arrow-down.svg';

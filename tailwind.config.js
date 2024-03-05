@@ -60,7 +60,8 @@ export default {
             },
             backgroundImage: {
                 'gradient-linear':
-                    'linear-gradient(hsl(282, 33%, 88%), hsl(277, 41%, 88%), hsl(273, 48%, 87%), hsl(268, 55%, 87%), hsl(263, 63%, 86%), hsl(259, 70%, 86%), hsl(254, 77%, 86%), hsl(250, 85%, 86%), hsl(245, 92%, 86%), hsl(240, 100%, 86%))'
+                    'linear-gradient(hsl(282, 33%, 88%), hsl(277, 41%, 88%), hsl(273, 48%, 87%), hsl(268, 55%, 87%), hsl(263, 63%, 86%), hsl(259, 70%, 86%), hsl(254, 77%, 86%), hsl(250, 85%, 86%), hsl(245, 92%, 86%), hsl(240, 100%, 86%))',
+                'scroll-gradient': '  linear-gradient(90deg, #0B66EC 0%, #F468985D 100%)'
             }
         }
     },
