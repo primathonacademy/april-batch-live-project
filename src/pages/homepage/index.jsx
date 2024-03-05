@@ -4,6 +4,7 @@ import WorkComponent from './WorkComponent';
 import GetInTouch from './GetInTouch';
 import TheArt from './TheArtSection';
 import OurServiceSection from './OurServiceSection';
+import Customerlove from './Customerlove';
 
 const Homepage = () => {
     return (
@@ -11,6 +12,7 @@ const Homepage = () => {
             <HeroSection />
             <OurServices />
             <WorkComponent />
+            <Customerlove/>
             <TheArt />
             <OurServiceSection />
             <GetInTouch />
