@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { IMPORTANT_PAGES, NAV_ITEMS } from '../constants/app-constant';
 
 import { brandLogo, instagramIcon, linkedinIcon, twitterIcon } from '../assets';
+import GetInTouch from './GetInTouch';
 
 const NavElements = () => {
     return (
@@ -29,7 +30,8 @@ const ImportantPagesLinks = () => {
 
 const Footer = () => {
     return (
-        <footer className="px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36 bg-neutral-100 pt-24">
+        <footer className="px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36 bg-fade-white pt-24">
+            <GetInTouch />
             <div className="flex flex-col md:flex-row justify-between gap-10 flex-wrap">
                 <div className="flex-1 justify-between">
                     <NavElements />

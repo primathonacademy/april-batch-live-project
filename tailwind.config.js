@@ -37,7 +37,8 @@ export default {
             width: {
                 180: '45rem',
                 95: '23.75rem',
-                100: '25rem'
+                100: '25rem',
+                137.5: '34.375rem'
             },
 
             padding: {
@@ -52,7 +53,9 @@ export default {
             },
             fontSize: {
                 xxs: '0.625rem',
+                '2.5xl': '1.688rem',
                 '7.5xl': '5rem',
+                '6.5xl': '4.125rem',
                 '4.5xl': '2.875rem'
             },
             height: {
@@ -62,7 +65,11 @@ export default {
             lineHeight: {
                 15: '3.75rem',
                 22.5: '5.625rem',
-                tighter: '4rem'
+                24: '6rem',
+                tighter: '4rem',
+                12.25: '3.063rem',
+                18: '4.5rem',
+                13:'3.25rem'
             },
             backgroundImage: {
                 'gradient-linear':
