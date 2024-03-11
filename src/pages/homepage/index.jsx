@@ -7,14 +7,14 @@ import Customerlove from './Customerlove';
 
 const Homepage = () => {
     return (
-        <>
+        <div>
             <HeroSection />
             <OurServices />
             <WorkComponent />
             <Customerlove />
             <TheArt />
             <OurServiceSection />
-        </>
+        </div>
     );
 };
 export default Homepage;

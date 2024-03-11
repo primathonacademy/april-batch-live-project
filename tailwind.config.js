@@ -44,12 +44,12 @@ export default {
             padding: {
                 45: '11.25rem',
                 90: '22.5rem',
-                17.5:'4.375rem',
-                215.25:'53.813rem',
-                62.5:'15.625rem',
-                31.25:'7.813rem',
-                37.25:'9.313rem',
-                169:'42.25rem'
+                17.5: '4.375rem',
+                215.25: '53.813rem',
+                62.5: '15.625rem',
+                31.25: '7.813rem',
+                37.25: '9.313rem',
+                169: '42.25rem'
             },
             fontSize: {
                 xxs: '0.625rem',
@@ -66,10 +66,11 @@ export default {
                 15: '3.75rem',
                 22.5: '5.625rem',
                 24: '6rem',
+                24.5: '6.5rem',
                 tighter: '4rem',
                 12.25: '3.063rem',
                 18: '4.5rem',
-                13:'3.25rem'
+                13: '3.25rem'
             },
             backgroundImage: {
                 'gradient-linear':
