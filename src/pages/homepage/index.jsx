@@ -7,14 +7,14 @@ import ExploreService from './ExploreService';
 
 const Homepage = () => {
     return (
-        <>
+        <div>
             <HeroSection />
             <ExploreService/>
             <WorkComponent />
             <Customerlove />
             <TheArt />
             <OurServiceSection />
-        </>
+        </div>
     );
 };
 export default Homepage;
