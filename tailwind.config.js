@@ -21,13 +21,18 @@ export default {
                 'fade-white': '#F7F7F7',
                 'fade-blue-white': '#F4F8FF',
                 'light-blue': '#E7E7FC',
+                'light-gray':'#ddd',
                 'gray-bg-color': '#F4F8FF',
                 'pink-bg-color': '#FFEAF1',
                 'portfolio-button-color': '#253F9C',
                 'section-quote': '#272727',
                 'section-box-heading-color': '#0B1226',
-                'section-box-paragraph-color': '#7B7B7B'
+                'section-box-paragraph-color': '#7B7B7B',
+
             },
+            screens: {
+                '3xl': '1920px',
+              },
             borderRadius: {
                 '4xl': '1.75rem',
                 '5xl': '2rem',
@@ -37,7 +42,8 @@ export default {
             width: {
                 180: '45rem',
                 95: '23.75rem',
-                100: '25rem'
+                100: '25rem',
+                17.5 : '4.375rem'
             },
 
             padding: {
@@ -57,7 +63,8 @@ export default {
             },
             height: {
                 212: '53.125rem',
-                159: '39.875rem'
+                159: '39.875rem',
+                17.5 : '4.375rem'
             },
             lineHeight: {
                 15: '3.75rem',
