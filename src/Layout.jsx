@@ -10,7 +10,7 @@ const Layout = () => {
             <Cursor />
             <ProgressBar />
             <Header />
-            <main>
+            <main className='overflow-hidden'>
                 <Outlet />
             </main>
             <Footer />
