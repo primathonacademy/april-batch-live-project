@@ -1,15 +1,15 @@
 import HeroSection from './HeroSection';
-import OurServices from './OurService';
 import WorkComponent from './WorkComponent';
 import TheArt from './TheArtSection';
 import OurServiceSection from './OurServiceSection';
 import Customerlove from './Customerlove';
+import ExploreService from './ExploreService';
 
 const Homepage = () => {
     return (
         <>
             <HeroSection />
-            <OurServices />
+            <ExploreService/>
             <WorkComponent />
             <Customerlove />
             <TheArt />
