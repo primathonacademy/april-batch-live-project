@@ -1,0 +1,150 @@
+.yumeLabsMainHeading {
+    padding: 90px 9.5% 50px 9.5%;
+    margin-top: 50px;
+    overflow-x: clip;
+}
+
+.topSectionGrid {
+    filter: brightness(0.1);
+    height: 0;
+    position: relative;
+    z-index: 0;
+    top: -60px;
+    left: -206px;
+}
+
+.topSectionGrid img {
+    width: 100%;
+    height: 306px;
+    transform: scale(0.96, 1.5);
+    overflow-x: hidden;
+}
+
+.topSectionGridTwo {
+    display: none;
+}
+
+.yumeLabsMainHeading > .yumeLabsMainHeadingLeft {
+    max-width: 70%;
+}
+
+.yumeLabsMainHeading > .yumeLabsMainHeadingRight {
+    max-width: 50%;
+}
+
+.yumeLabsMainHeadingLeft h1 {
+    margin-bottom: 19px;
+    font-size: 4.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: -3px;
+    margin-top: -20px;
+}
+
+.yumeLabsMainHeadingLeft span {
+    max-width: 18%;
+    display: block;
+    background-color: rgb(12, 12, 161);
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: -24px;
+    margin-bottom: 30px;
+}
+
+.yumeLabsMainHeadingRight p {
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: -10px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.webViewHide {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .yumeLabsMainHeading {
+        flex-direction: column;
+        row-gap: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .yumeLabsMainHeading > .yumeLabsMainHeadingLeft {
+        max-width: 100%;
+    }
+
+    .yumeLabsMainHeading > div {
+        flex: 100%;
+    }
+
+    .yumeLabsMainHeadingLeft h1 {
+        font-size: 2.875rem;
+        margin-top: -8px;
+        line-height: 52px;
+        margin-bottom: 50px;
+    }
+
+    .yumeLabsMainHeadingRight p {
+        font-size: 1.125rem;
+    }
+
+    .topSectionGrid {
+        top: -84px;
+    }
+
+    .topSectionGrid img {
+        transform: scale(0.96, 0.85);
+    }
+
+    .topSectionGridTwo {
+        display: block;
+        filter: brightness(0.1);
+        height: 0;
+        position: relative;
+        z-index: 0;
+        top: 70px;
+        left: -206px;
+    }
+
+    .topSectionGridTwo img {
+        height: 306px;
+        transform: scale(0.96, 0.85);
+    }
+
+    .yumeLabsMainHeading > .yumeLabsMainHeadingRight {
+        max-width: 100%;
+    }
+
+    .yumeLabsMainHeadingLeft span {
+        max-width: 50%;
+        position: relative;
+        top: 13px;
+    }
+
+    .yumeLabsMainHeadingRight p {
+        max-width: 85%;
+    }
+
+    .background-gradient {
+        top: 100px;
+        right: -338px;
+        transform: rotate(-362deg);
+        width: 780px;
+        height: 248px;
+    }
+
+    .webViewHide {
+        display: block;
+    }
+
+    .mobileViewHide {
+        display: none;
+    }
+}

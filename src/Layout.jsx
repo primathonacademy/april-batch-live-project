@@ -8,7 +8,7 @@ const Layout = () => {
         <>
             <Cursor />
             <Header />
-            <main>
+            <main className='overflow-hidden'>
                 <Outlet />
             </main>
             <Footer />
