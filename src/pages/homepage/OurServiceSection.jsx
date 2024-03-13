@@ -100,7 +100,7 @@ const OurServiceSection = () => {
             <div ref={triggerRef}>
                 <div
                     ref={imagesContainerRef}
-                    className=" flex xl:flex xl:gap-8 xl:z-[1] xl:w-fit xl:ml-44 xl:mr-0 xl:my-0 xl:pt-20 overflow-x-scroll  w-[unset] m-0 gap-5 pt-10 pb-7 pl-9 overflow-hidden">
+                    className=" flex xl:flex xl:gap-8 xl:z-[1] xl:w-fit xl:ml-44 xl:mr-0 xl:my-0 xl:pt-20 overflow-x-scroll scrollbar-hide w-[unset] m-0 gap-5 pt-10 pb-7 pl-9 overflow-hidden">
                     {OurServicesData.map((item) => (
                         <div
                             key={item.id}
