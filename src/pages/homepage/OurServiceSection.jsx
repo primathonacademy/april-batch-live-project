@@ -1,135 +1,145 @@
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-import SplitType from 'split-type';
-import backgroundGirdLines from '../../../public/images/svg/background-grid-lines.svg';
+import { useGSAP } from '@gsap/react';
 import ourServices from '/images/png/services-background.png';
-import { OurServicesHeadingData, OurServicesData } from '../../constants/data';
-
-gsap.registerPlugin(ScrollTrigger);
+import { gsap } from 'gsap/all';
+import { useRef } from 'react';
+import { SCREEN_SIZE } from '../../constants/app-constant';
 
 const OurServiceSection = () => {
-    const textRef = useRef(null);
-    const imagesContainerRef = useRef(null);
-    const triggerRef = useRef(null);
-    const arrayOfObjects = Array.from({ length: 18 }, (_, index) => ({ id: index + 1 }));
-    
-    useEffect(() => {
-        const isMobile = window.innerWidth <= 768;
+    const containerRef = useRef(null);
+    const scrollContainerRef = useRef(null);
 
-        if (!isMobile) {
-            if (textRef.current) {
-                const splitText = new SplitType(textRef.current, {
-                    types: 'chars,words,lines'
-                });
-
-                gsap.from(splitText.chars, {
-                    opacity: 0.3,
-                    duration: 1.5,
-                    ease: 'power1.out',
-                    stagger: 1,
-                    scrollTrigger: {
-                        trigger: textRef.current,
-                        start: 'top 80%',
-                        end: 'top 20%',
-                        scrub: true,
-                        once: true
-                    }
-                });
-            }
-        }
-    }, []);
-
-    useEffect(() => {
-        const isMobile = window.innerWidth <= 768;
-
-        if (!isMobile) {
-            const pin = gsap.fromTo(
-                imagesContainerRef.current,
-                {
-                    translateX: 0
-                },
-                {
-                    translateX: '-190vw',
-                    ease: 'none',
-                    duration: 1,
-                    scrollTrigger: {
-                        trigger: triggerRef.current,
-                        start: 'top 12%',
-                        end: '2000 top',
-                        scrub: 1,
-                        pin: true
-                    }
+    useGSAP(() => {
+        gsap.fromTo(
+            scrollContainerRef.current,
+            {
+                translateX: 0
+            },
+            {
+                translateX: '-190vw',
+                ease: 'none',
+                duration: 1,
+                scrollTrigger: {
+                    trigger: containerRef.current,
+                    start: 'top 20%',
+                    end: '2000 bottom',
+                    scrub: 1,
+                    pin: true
                 }
-            );
-
-            return () => {
-                pin.kill();
-            };
-        }
-
-        return () => {};
+            }
+        );
     }, []);
+
+    const arrayOfObjects = Array.from({ length: 18 }, (_, index) => ({ id: index + 1 }));
+
+    const rawText =
+        'Yume Labs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation.';
+
+    let displayText = rawText;
+    if (window.innerWidth >= SCREEN_SIZE.MD && window.innerWidth <= SCREEN_SIZE.LG) {
+        displayText = rawText.slice(0, 60) + ' ...';
+    }
+
+    const divVerticalElements = Array.from({ length: 16 }).map((_, index) => (
+        <div key={index} className="h-[80vh] bg-black opacity-5 w-px mr-3"></div>
+    ));
+
+    const divHorizontalElements = Array.from({ length: 4 }).map((_, index) => (
+        <hr key={index} className="border-black opacity-20" />
+    ));
 
     return (
-        <>
-            <div className="bg-[rgba(245,239,239,0.4)] z-[1] xl:mt-50 xl:pb-25 pt-12 pb-25">
-                <div className="overflow-hidden px-[9.5%] py-24">
-                    <div className="brightness-[0.1] h-0 relative z-[-1] xl:-left-9 xl:-top-px  -top-7 -left-9 ">
-                        <img
-                            className="xl:opacity-100 xl:scale-x-150 xl:scale-y-[1.16] scale-x-150 scale-y-85"
-                            src={backgroundGirdLines}
-                            alt="Background grid lines"
-                        />
+        <div className="">
+            <section>
+                <div className="px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 py-12 md:pt-24 xl:pt-36 bg-fade-white relative overflow-hidden">
+                    <div className="absolute left-0 top-[72px] sm:top-[72px] md:top-[124px] xl:top-[172px] 2xl:top-[176px] 3xl:top-43.5 flex flex-col gap-10 lg:gap-[47px] xl:gap-12 2xl:gap-[64px] w-full">
+                        {divHorizontalElements}
                     </div>
-                    <div>
-                        <p className="xl:bg-brand-blue xl:w-48 xl:text-[white] xl:italic xl:text-[1.75rem] xl:relative xl:leading-5 xl:flex xl:justify-center xl:mt-24 xl:pl-4 xl:pr-2.5 xl:py-1 xl:pb-1 xl:left-0.5 xl:top-1 font-serif hidden">
-                            {OurServicesHeadingData.titleWeb}
-                        </p>
-                        <p className="xl:hidden bg-brand-blue w-40 text-white italic mt-24 text-sm pr-2 pl-4 py-1.5 relative -top-1 font-serif flex items-center justify-center">
-                            {OurServicesHeadingData.titleMobile}
-                        </p>
-                        <h2
-                            ref={textRef}
-                            className="xl:text-[3.5rem] xl:max-w-[75%] leading-15 font-medium xl:mt-1 xl:top-3 font-poppins text-4xl mt-px relative top-1 break-words">
-                            {OurServicesHeadingData.subtitle}
-                        </h2>
+                    <div className="absolute top-0 w-full flex items-center gap-2 lg:gap-5 xl:gap-6 2xl:gap-7">
+                        {divVerticalElements}
                     </div>
+                    <h3 className="italic font-serif font-light text-center mb-2 2xl:mb-3 text-white w-28 md:w-32 lg:w-36 2xl:w-44 text-base md:text-lg 2xl:text-2xl bg-accent-blue">
+                        Our Services
+                    </h3>
+                    <p className="text-section-box-heading-color text-4xl font-poppins font-medium 2xl:text-6xl sm:w-11/12 xl:w-5/6 leading-10 lg:leading-snug 2xl:leading-tighter">
+                        High-potential global brands trust Yume Labs for better customer advocacy, stronger investor
+                        trust, and higher media love.
+                    </p>
                 </div>
-            </div>
-            <div ref={triggerRef}>
-                <div
-                    ref={imagesContainerRef}
-                    className=" flex xl:flex xl:gap-8 xl:z-[1] xl:w-fit xl:ml-44 xl:mr-0 xl:my-0 xl:pt-20 overflow-x-scroll  w-[unset] m-0 gap-5 pt-10 pb-7 pl-9 overflow-hidden">
-                    {OurServicesData.map((item) => (
-                        <div
-                            key={item.id}
-                            className="flex h-[550px] pt-[0] pr-[5%] pb-[3%] pl-[5%] xl:flex-row xl:flex-nowrap bg-[white] xl:z-[1] xl:pl-32 xl:pr-20 xl:pt-16 xl:pb-24 xl:rounded-xl xl:gap-x-80">
-                            <div className="xl:self-end xl:mb-32 mb-0 pt-9 pr-5 ">
-                                <h4 className="xl:text-4xl  xl:font-medium xl:relative xl:pl-0 xl:pr-44 xl:py-0 xl:top-28 font-poppins text-2xl pr-44 py-0 pl-0 top-0">
-                                    {item.heading}
-                                </h4>
-                                <p className="xl:text-[gray] xl:opacity-60 xl:text-2xl xl:font-normal xl:relative xl:max-w-80 xl:pt-5 xl:pb-0 xl:px-0 xl:top-28 font-roboto py-5 top-0 px-0 max-w-75  text-xl">
-                                    {item.description}
-                                </p>
-                            </div>
-                            <div className=" pt-6 pb-6 ">
-                                <img
-                                    className="xl:max-h-96 xl:max-w-96 max-w-80 max-h-64"
-                                    src={ourServices}
-                                    alt="Background grid lines"
-                                />
+            </section>
+            <section className="bg-fade-white py-12">
+                <div ref={containerRef} className="overflow-x-scroll scrollbar-hide overflow-hidden">
+                    <div
+                        ref={scrollContainerRef}
+                        className="flex gap-6 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36">
+                        <div className="sm:w-full">
+                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                                    <img
+                                        className="object-cover w-full h-full rounded-lg"
+                                        src={ourServices}
+                                        alt="Background grid lines"
+                                    />
+                                </div>
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                        Deeper Insight
+                                    </h3>
+                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
+                                        {displayText}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    ))}
+                        <div className="sm:w-full">
+                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                                    <img
+                                        className="object-cover w-full h-full rounded-lg"
+                                        src={ourServices}
+                                        alt="Background grid lines"
+                                    />
+                                </div>
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                        Deeper Insight
+                                    </h3>
+                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 md:text-lg lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
+                                        {displayText}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="sm:w-full">
+                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                                    <img
+                                        className="object-cover w-full h-full rounded-lg"
+                                        src={ourServices}
+                                        alt="Background grid lines"
+                                    />
+                                </div>
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                        Deeper Insight
+                                    </h3>
+                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 md:text-lg lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
+                                        {displayText}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="flex justify-center items-center my-10 gap-4 flex-wrap ">
+            </section>
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-32">
                 {arrayOfObjects.map((obj) => (
-                    <div key={obj.id} className="md:w-60 md:h-28 bg-grid-color h-14 w-28" />
+                    <div
+                        key={obj.id}
+                        className={`bg-fade-white aspect-[2/1] rounded-lg ${obj.id >= 16 ? 'hidden lg:block' : ''}`}
+                    />
                 ))}
             </div>
-        </>
+        </div>
     );
 };
 
