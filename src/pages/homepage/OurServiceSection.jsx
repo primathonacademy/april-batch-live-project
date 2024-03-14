@@ -2,7 +2,6 @@ import { useGSAP } from '@gsap/react';
 import ourServices from '/images/png/services-background.png';
 import { gsap } from 'gsap/all';
 import { useRef } from 'react';
-import { SCREEN_SIZE } from '../../constants/app-constant';
 
 const OurServiceSection = () => {
     const containerRef = useRef(null);
@@ -32,19 +31,14 @@ const OurServiceSection = () => {
     const arrayOfObjects = Array.from({ length: 18 }, (_, index) => ({ id: index + 1 }));
 
     const rawText =
-        'Yume Labs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation.';
-
-    let displayText = rawText;
-    if (window.innerWidth >= SCREEN_SIZE.MD && window.innerWidth <= SCREEN_SIZE.LG) {
-        displayText = rawText.slice(0, 60) + ' ...';
-    }
+        'Yume Labs is a global UI UX Design and Industrial Design agency that helps your business scale through fail proof design innovation.';
 
     const divVerticalElements = Array.from({ length: 16 }).map((_, index) => (
         <div key={index} className="h-[80vh] bg-black opacity-5 w-px mr-3"></div>
     ));
 
     const divHorizontalElements = Array.from({ length: 4 }).map((_, index) => (
-        <hr key={index} className="border-black opacity-20" />
+        <hr key={index} className="border-black opacity-10" />
     ));
 
     return (
@@ -72,58 +66,58 @@ const OurServiceSection = () => {
                         ref={scrollContainerRef}
                         className="flex gap-6 md:gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36">
                         <div className="sm:w-full">
-                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
-                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                            <div className="lg:flex flex-row-reverse w-89 sm:w-95 md:w-100 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-6 lg:pb-0 aspect-[5/4] lg:w-1/2 md:aspect-square overflow-hidden">
                                     <img
                                         className="object-cover w-full h-full rounded-lg"
                                         src={ourServices}
                                         alt="Background grid lines"
                                     />
                                 </div>
-                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
-                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 lg:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2 md:w-full lg:w-1/2">
                                         Deeper Insight
                                     </h3>
-                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
-                                        {displayText}
+                                    <p className="text-our-service-paragraph pt-3 overflow-hidden line-clamp-4 sm:line-clamp-none lg:line-clamp-5 leading-5 w-3/4 sm:text-xl xl:text-2xl md:leading-8 md:w-full sm:w-4/5">
+                                        {rawText}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div className="sm:w-full">
-                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
-                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                            <div className="lg:flex flex-row-reverse w-89 sm:w-95 md:w-100 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-6 lg:pb-0 aspect-[5/4] lg:w-1/2 md:aspect-square overflow-hidden">
                                     <img
                                         className="object-cover w-full h-full rounded-lg"
                                         src={ourServices}
                                         alt="Background grid lines"
                                     />
                                 </div>
-                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
-                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 lg:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2 md:w-full lg:w-1/2">
                                         Deeper Insight
                                     </h3>
-                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 md:text-lg lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
-                                        {displayText}
+                                    <p className="text-our-service-paragraph pt-3 overflow-hidden line-clamp-4 sm:line-clamp-none lg:line-clamp-5 leading-5 w-3/4 sm:text-xl xl:text-2xl md:leading-8 md:w-full sm:w-4/5">
+                                        {rawText}
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div className="sm:w-full">
-                            <div className="md:flex flex-row-reverse w-89 sm:w-95 md:w-150 md:h-75 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
-                                <div className="pb-6 md:pb-0 aspect-[5/4] md:w-1/2 md:aspect-square overflow-hidden">
+                            <div className="lg:flex flex-row-reverse w-89 sm:w-95 md:w-100 lg:w-225 lg:h-112.25 xl:w-300 xl:h-150 2xl:w-375 2xl:h-187.5 bg-white p-6 md:p-10 lg:p-12 xl:p-14 2xl:p-20 mb-24 sm:mb-28 rounded-lg md:rounded-xl">
+                                <div className="pb-6 md:pb-6 lg:pb-0 aspect-[5/4] lg:w-1/2 md:aspect-square overflow-hidden">
                                     <img
                                         className="object-cover w-full h-full rounded-lg"
                                         src={ourServices}
                                         alt="Background grid lines"
                                     />
                                 </div>
-                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 md:w-1/2">
-                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2">
+                                <div className="flex flex-col justify-end p-2 md:p-4 lg:p-6 xl:p-8 lg:w-1/2">
+                                    <h3 className="text-2.5xl md:text-3xl lg:text-4xl leading-8 sm:text-3xl font-medium font-poppins w-1/2 md:w-full lg:w-1/2">
                                         Deeper Insight
                                     </h3>
-                                    <p className="text-our-service-paragraph pt-3 leading-5 w-3/4 md:text-lg lg:text-xl xl:text-2xl md:leading-6 sm:w-4/5">
-                                        {displayText}
+                                    <p className="text-our-service-paragraph pt-3 overflow-hidden line-clamp-4 sm:line-clamp-none lg:line-clamp-5 leading-5 w-3/4 sm:text-xl xl:text-2xl md:leading-8 md:w-full sm:w-4/5">
+                                        {rawText}
                                     </p>
                                 </div>
                             </div>
@@ -131,7 +125,7 @@ const OurServiceSection = () => {
                     </div>
                 </div>
             </section>
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-32">
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-3 lg:gap-4 px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-12 sm:pt-16 md:pt-20 lg:pt-24 xl:pt-28 2xl:pt-32">
                 {arrayOfObjects.map((obj) => (
                     <div
                         key={obj.id}
