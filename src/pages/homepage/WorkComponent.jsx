@@ -29,8 +29,8 @@ const WorkComponent = () => {
                     <div
                         ref={(el) => (boxRefs.current[0] = el)}
                         className="flex flex-col md:justify-start w-full box md:w-5/12 md:mx-7 lg:mx-10 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
-                        <div>
-                            <img src={workImg1} alt="work image 1" className="object-cover rounded-lg md:rounded-xl" />
+                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
+                            <img src={workImg1} alt="work image 1" className="object-cover w-full h-full" />
                         </div>
                         <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
                             <span className="text-accent-blue 2xl:px-4">#UX/UI</span>
@@ -47,11 +47,11 @@ const WorkComponent = () => {
                     <div className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
                         <div className="w-full md:h-44 lg:h-48 xl:h-60 2xl:h-72"></div>
                         <div ref={(el) => (boxRefs.current[1] = el)}>
-                            <div>
+                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
                                 <img
                                     src={workImg2}
                                     alt="work image 2"
-                                    className="object-cover rounded-lg md:rounded-xl"
+                                    className="object-cover w-full h-full"
                                 />
                             </div>
                             <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
@@ -70,8 +70,11 @@ const WorkComponent = () => {
                     <div
                         ref={(el) => (boxRefs.current[2] = el)}
                         className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
-                        <div>
-                            <img src={workImg3} alt="work image 3" className="object-cover rounded-lg md:rounded-xl" />
+                         <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
+                            <img src={workImg3}
+                                 alt="work image 3"
+                                 className="object-cover w-full h-full"
+                            />
                         </div>
                         <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
                             <span className="text-accent-blue 2xl:px-4">#UX/UI</span>
@@ -88,11 +91,11 @@ const WorkComponent = () => {
                     <div className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
                         <div className="w-full md:h-44 lg:h-48 xl:h-60 2xl:h-72"></div>
                         <div ref={(el) => (boxRefs.current[3] = el)}>
-                            <div>
+                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
                                 <img
                                     src={workImg4}
                                     alt="work image 4"
-                                    className="object-cover rounded-lg md:rounded-xl"
+                                    className="object-cover w-full h-full"
                                 />
                             </div>
                             <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
@@ -115,11 +118,11 @@ const WorkComponent = () => {
                 <div className="flex justify-center w-full md:my-10">
                     <NavLink
                         to="/"
-                        className="flex items-center justify-center cursor-pointer gap-8 2xs:gap-8 xs:gap-12 sm:gap-14 2xl:gap-20 py-1.5 xl:py-2 pl-5 sm:pl-7 xl:pl-10 bg-gray-bg-color rounded-full hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-30% hover:to-brand-pink">
+                        className="flex items-center justify-center cursor-pointer gap-8 sm:gap-14 2xl:gap-20 py-1.5 xl:py-2 pl-5 sm:pl-7 xl:pl-10 2xl:pl-12 bg-gray-bg-color rounded-full">
                         <h1 className="text-accent-blue text-xs sm:text-sm md:text-base xl:text-xl leading-5 md:leading-6 tracking-wide xs:tracking-wider xl:tracking-widest font-semibold">
                             EXPORT PORTFOLIO
                         </h1>
-                        <div className="flex items-center justify-center rounded-full p-3.5 sm:p-4 xl:p-6 mr-1 xs:mr-1.5 xl:mr-2 bg-brand-blue hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-30% hover:to-brand-pink">
+                        <div className="flex items-center justify-center rounded-full p-3.5 sm:p-4 xl:p-6 mr-1 sm:mr-1.5 xl:mr-2 bg-brand-blue hover:bg-gradient-to-r hover:from-brand-blue hover:from-5% hover:to-brand-pink">
                             <img src={rightArrow} alt="right arrow icon" className="w-3 h-3 sm:w-4 sm:h-4" />
                         </div>
                     </NavLink>

@@ -1,22 +1,20 @@
 import HeroSection from './HeroSection';
-import OurServices from './OurService';
 import WorkComponent from './WorkComponent';
-import GetInTouch from './GetInTouch';
 import TheArt from './TheArtSection';
 import OurServiceSection from './OurServiceSection';
 import Customerlove from './Customerlove';
+import ExploreService from './ExploreService';
 
 const Homepage = () => {
     return (
-        <>
+        <div>
             <HeroSection />
-            <OurServices />
+            <ExploreService/>
             <WorkComponent />
-            <Customerlove/>
+            <Customerlove />
             <TheArt />
             <OurServiceSection />
-            <GetInTouch />
-        </>
+        </div>
     );
 };
 export default Homepage;

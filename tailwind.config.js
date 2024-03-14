@@ -28,7 +28,7 @@ export default {
                 'section-quote': '#272727',
                 'section-box-heading-color': '#0B1226',
                 'section-box-paragraph-color': '#7B7B7B',
-
+                'grid-color': '#F5F5F5'
             },
             screens: {
                 '3xl': '1920px',
@@ -44,21 +44,24 @@ export default {
                 95: '23.75rem',
                 100: '25rem',
                 17.5 : '4.375rem'
+                137.5: '34.375rem'
             },
 
             padding: {
                 45: '11.25rem',
                 90: '22.5rem',
-                17.5:'4.375rem',
-                215.25:'53.813rem',
-                62.5:'15.625rem',
-                31.25:'7.813rem',
-                37.25:'9.313rem',
-                169:'42.25rem'
+                17.5: '4.375rem',
+                215.25: '53.813rem',
+                62.5: '15.625rem',
+                31.25: '7.813rem',
+                37.25: '9.313rem',
+                169: '42.25rem'
             },
             fontSize: {
                 xxs: '0.625rem',
+                '2.5xl': '1.688rem',
                 '7.5xl': '5rem',
+                '6.5xl': '4.125rem',
                 '4.5xl': '2.875rem'
             },
             height: {
@@ -69,7 +72,12 @@ export default {
             lineHeight: {
                 15: '3.75rem',
                 22.5: '5.625rem',
-                tighter: '4rem'
+                24: '6rem',
+                24.5: '6.5rem',
+                tighter: '4rem',
+                12.25: '3.063rem',
+                18: '4.5rem',
+                13: '3.25rem'
             },
             backgroundImage: {
                 'gradient-linear':
