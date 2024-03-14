@@ -20,7 +20,7 @@ const OurServiceSection = () => {
                 duration: 1,
                 scrollTrigger: {
                     trigger: containerRef.current,
-                    start: 'top 20%',
+                    start: 'top 15%',
                     end: '2000 bottom',
                     scrub: 1,
                     pin: true
