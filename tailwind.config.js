@@ -21,7 +21,7 @@ export default {
                 'fade-white': '#F7F7F7',
                 'fade-blue-white': '#F4F8FF',
                 'light-blue': '#E7E7FC',
-                'light-gray':'#ddd',
+                'light-gray':'#DDDDDD',
                 'gray-bg-color': '#F4F8FF',
                 'pink-bg-color': '#FFEAF1',
                 'portfolio-button-color': '#253F9C',
