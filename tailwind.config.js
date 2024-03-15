@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import scrollbarHide from 'tailwind-scrollbar-hide';
+
 export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
@@ -28,7 +30,8 @@ export default {
                 'section-quote': '#272727',
                 'section-box-heading-color': '#0B1226',
                 'section-box-paragraph-color': '#7B7B7B',
-                'grid-color': '#F5F5F5'
+                'grid-color': '#F5F5F5',
+                'our-service-paragraph': '#696969'
             },
             screens: {
                 '3xl': '1920px',
@@ -42,8 +45,14 @@ export default {
             width: {
                 180: '45rem',
                 95: '23.75rem',
+                89: '22.25rem',
                 100: '25rem',
-                17.5 : '4.375rem'
+                137.5: '34.375rem',
+                150: '37.5rem',
+                225: '56.25rem',
+                300: '75rem',
+                375: '93.75rem',
+                17.5 : '4.375rem',
                 137.5: '34.375rem'
             },
 
@@ -67,6 +76,10 @@ export default {
             height: {
                 212: '53.125rem',
                 159: '39.875rem',
+                75: '18.75rem',
+                112.25: '28.125rem',
+                150: '37.5rem',
+                187.5: '46.875rem',
                 17.5 : '4.375rem'
             },
             lineHeight: {
@@ -86,5 +99,5 @@ export default {
             }
         }
     },
-    plugins: []
+    plugins: [scrollbarHide]
 };
