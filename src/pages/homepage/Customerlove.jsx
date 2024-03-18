@@ -48,7 +48,7 @@ const Customerlove = () => {
     return (
         <section className='pl-2 pt-31.25 pb-37.25 md:pt-62.5 md:pb-31.25'>
         
-            <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-2.6rem] xl:left-[-2.7rem] 2xl:left-0">
+            <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-2.6rem] xl:left-[-2.7rem] 2xl:left-[-0.813rem] 3xl:left-[-2.375rem]">
                 <img src={gridimage} alt="Grid image" className="md:w-full md:h-96"/>
             </div>
              <div className='px-7 md:pl-9 lg:pl-14 xl:pl-24 2xl:pl-36'>

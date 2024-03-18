@@ -18,10 +18,3 @@ export const OurServicesData = [
             ' Yume Labs is a global UI UX Design and Industrial Design agency that helps your business scale through fail-proof design innovation systems.'
     }
 ];
-
-export const OurServicesHeadingData = {
-    titleWeb: 'Our Services',
-    titleMobile: 'Our Approach',
-    subtitle:
-        'High-potential global brands trust Yume Labs for better customer advocacy, stronger investor trust, and higher media love.'
-};
