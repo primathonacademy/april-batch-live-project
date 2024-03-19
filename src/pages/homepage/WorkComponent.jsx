@@ -25,11 +25,11 @@ const WorkComponent = () => {
             </section>
 
             <section>
-                <div className="flex flex-col md:flex-row md:flex-wrap justify-center bg-white px-9 2xl:px-20">
+                <div className="flex flex-col md:flex-row md:flex-wrap justify-center px-9 2xl:px-20">
                     <div
                         ref={(el) => (boxRefs.current[0] = el)}
                         className="flex flex-col md:justify-start w-full box md:w-5/12 md:mx-7 lg:mx-10 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
-                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
+                        <div className="aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden">
                             <img src={workImg1} alt="work image 1" className="object-cover w-full h-full" />
                         </div>
                         <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
@@ -47,12 +47,8 @@ const WorkComponent = () => {
                     <div className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
                         <div className="w-full md:h-44 lg:h-48 xl:h-60 2xl:h-72"></div>
                         <div ref={(el) => (boxRefs.current[1] = el)}>
-                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
-                                <img
-                                    src={workImg2}
-                                    alt="work image 2"
-                                    className="object-cover w-full h-full"
-                                />
+                            <div className="aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden">
+                                <img src={workImg2} alt="work image 2" className="object-cover w-full h-full" />
                             </div>
                             <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
                                 <span className="text-accent-blue 2xl:px-4">#UX/UI</span>
@@ -70,11 +66,8 @@ const WorkComponent = () => {
                     <div
                         ref={(el) => (boxRefs.current[2] = el)}
                         className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
-                         <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
-                            <img src={workImg3}
-                                 alt="work image 3"
-                                 className="object-cover w-full h-full"
-                            />
+                        <div className="aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden">
+                            <img src={workImg3} alt="work image 3" className="object-cover w-full h-full" />
                         </div>
                         <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
                             <span className="text-accent-blue 2xl:px-4">#UX/UI</span>
@@ -91,12 +84,8 @@ const WorkComponent = () => {
                     <div className="flex flex-col md:justify-start w-full md:w-5/12 md:mx-7 lg:mx-9 2xl:mx-14 pb-12 sm:pb-16 md:pb-0">
                         <div className="w-full md:h-44 lg:h-48 xl:h-60 2xl:h-72"></div>
                         <div ref={(el) => (boxRefs.current[3] = el)}>
-                        <div className='aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden'>
-                                <img
-                                    src={workImg4}
-                                    alt="work image 4"
-                                    className="object-cover w-full h-full"
-                                />
+                            <div className="aspect-[5/6] bg-white rounded-lg md:rounded-xl 2xl:rounded-2xl overflow-hidden">
+                                <img src={workImg4} alt="work image 4" className="object-cover w-full h-full" />
                             </div>
                             <p className="text-xs 2xl:text-base font-poppins font-semibold pt-7 2xl:pt-16">
                                 <span className="text-accent-blue 2xl:px-4">#UX/UI</span>
