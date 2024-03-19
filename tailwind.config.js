@@ -25,9 +25,6 @@ export default {
                 'light-gray': '#DDDDDD',
                 'gray-bg-color': '#F4F8FF',
                 'pink-bg-color': '#FFEAF1',
-                'portfolio-button-color': '#253F9C',
-                'section-quote': '#272727',
-                'section-box-heading-color': '#0B1226',
                 'section-box-paragraph-color': '#7B7B7B',
                 'grid-color': '#F5F5F5',
                 'our-service-paragraph': '#696969'
@@ -53,6 +50,7 @@ export default {
                 375: '93.75rem',
                 17.5: '4.375rem',
             },
+
 
             padding: {
                 45: '11.25rem',
