@@ -49,6 +49,7 @@ export default {
                 300: '75rem',
                 375: '93.75rem',
                 17.5: '4.375rem'
+            },
 
             padding: {
                 45: '11.25rem',
