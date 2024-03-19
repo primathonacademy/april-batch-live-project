@@ -1,4 +1,5 @@
 import HeroSection from './HeroSection';
+import OurEngagement from './OurEngagement';
 import ResearchSection from './ResearchSection';
 
 const Service = () => {
@@ -6,6 +7,7 @@ const Service = () => {
         <>
             <HeroSection />
             <ResearchSection/>
+            <OurEngagement />
         </>
     );
 };
