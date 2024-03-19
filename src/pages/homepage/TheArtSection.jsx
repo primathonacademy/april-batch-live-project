@@ -59,7 +59,7 @@ const TheArt = () => {
                     <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-5.6rem] xl:left-[-7.7rem] 2xl:left-0">
                         <img src={gridlineBgImage} alt="Grid image" className="md:w-full md:h-96" />
                     </div>
-                    <span className="text-dark-blue lg:text-white lg:bg-dark-blue md:text-white md:bg-dark-blue md:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
+                    <span className="text-accent-blue lg:text-white lg:bg-accent-blue md:text-white md:bg-dark-blue md:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
                         The Art of the Possible
                     </span>
                     <p
