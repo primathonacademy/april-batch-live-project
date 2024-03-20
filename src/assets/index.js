@@ -25,3 +25,5 @@ export { default as leftbtnarrow } from '/src/assets/images/leftbtn.png';
 export { default as rightbtnarrow } from '/src/assets/images/rightbtn.png';
 export { default as gridimage } from '/src/assets/images/gridimage.png';
 export { default as researchImage } from '/src/assets/images/research-UI-image.png';
+export { default as percentIcon } from '/src/assets/icons/icon-percent.svg';
+export { default as brandAndValues } from '/src/assets/aboutuspage/brand-and-values.jpg';
