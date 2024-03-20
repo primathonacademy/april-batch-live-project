@@ -10,7 +10,7 @@ const Homepage = () => {
         <div>
             <HeroSection />
             <ExploreService />
-            <WorkComponent isHomePage={true}/>
+            <WorkComponent isHomePage={true} />
             <OurServiceSection />
             <Customerlove />
             <TheArt />

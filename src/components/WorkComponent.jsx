@@ -1,16 +1,16 @@
-import { Fragment, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import { NavLink } from 'react-router-dom';
 import scrollHandler from '../utils/scrollHandlerUtils';
 import { workImg1, workImg2, workImg3, workImg4, rightArrow } from '../assets/index';
-import { checkPropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 
 const WorkComponent = (props) => {
     const { isHomePage } = props;
     const boxRefs = useRef([]);
 
     WorkComponent.propTypes = {
-        isHomePage: checkPropTypes
+        isHomePage: PropTypes.bool.isRequired
     };
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const WorkComponent = (props) => {
     }, []);
 
     return (
-        <Fragment>
+        <>
             <section>
                 <div className="px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-12">
                     <h3 className="italic font-serif font-light text-center mb-2 2xl:mb-3 text-white w-28 md:w-32 lg:w-36 2xl:w-44 text-base md:text-lg 2xl:text-2xl bg-accent-blue">
@@ -137,7 +137,7 @@ const WorkComponent = (props) => {
                     )}
                 </div>
             </section>
-        </Fragment>
+        </>
     );
 };
 
