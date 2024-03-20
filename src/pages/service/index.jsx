@@ -5,7 +5,7 @@ const Service = () => {
     return (
         <>
             <HeroSection />
-            <ResearchSection/>
+            <ResearchSection />
         </>
     );
 };

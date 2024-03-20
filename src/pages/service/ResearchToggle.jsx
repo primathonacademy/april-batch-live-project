@@ -3,7 +3,9 @@ import { downArrowIcon, researchImage, rightArrowIcon } from '../../assets';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const ToggleableSection = ({ title }) => {
+const ToggleableSection = (props) => {
+    const { title } = props;
+
     const [isOpen, setIsOpen] = useState(false);
     const toggleSection = () => {
         setIsOpen(!isOpen);
@@ -56,6 +58,7 @@ const Research = () => {
         'Competitor Analysis',
         'Ethnographic Research'
     ];
+
     return (
         <div className="overflow-x:auto" ref={contentRef}>
             <div className="gap-4 md:gap-20 md:flex w-full pb-20">
@@ -138,4 +141,5 @@ const Research = () => {
         </div>
     );
 };
+
 export default Research;
