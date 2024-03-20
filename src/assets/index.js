@@ -22,3 +22,7 @@ export {default as custimage1} from '/src/assets/images/custimage.png';
 export {default as leftbtnarrow} from '/src/assets/images/leftbtn.png';
 export {default as rightbtnarrow} from '/src/assets/images/rightbtn.png';
 export {default as gridimage} from '/src/assets/images/gridimage.png';
+
+export {default as linkedin} from '/src/assets/images/linkdin.png';
+
+export {default as partnergrid} from '/src/assets/images/grid5.png';
