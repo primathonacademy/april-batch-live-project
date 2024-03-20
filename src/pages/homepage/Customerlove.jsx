@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { SLIDES } from '../../constants/app-constant';
 import { useEffect, useRef } from 'react';
 import { gsap, ScrollTrigger } from 'gsap/all';
@@ -30,8 +30,6 @@ const Customerlove = () => {
         }
     }, []);
 
-   
-
     const [currentindex, Setcureentindex] = useState(0);
 
     const prevSlide = () => {
@@ -46,21 +44,22 @@ const Customerlove = () => {
         Setcureentindex(newIndex);
     };
     return (
-        <section className='pl-2 pt-31.25 pb-37.25 md:pt-62.5 md:pb-31.25'>
-        
+        <section className="pl-2 pt-31.25 pb-37.25 md:pt-62.5 md:pb-31.25">
             <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-2.6rem] xl:left-[-2.7rem] 2xl:left-[-0.813rem] 3xl:left-[-2.375rem]">
-                <img src={gridimage} alt="Grid image" className="md:w-full md:h-96"/>
+                <img src={gridimage} alt="Grid image" className="md:w-full md:h-96" />
             </div>
-             <div className='px-7 md:pl-9 lg:pl-14 xl:pl-24 2xl:pl-36'>
-            <div className="bg-transparent md:bg-accent-blue w-32 md:w-64">
-                <p className="flex justify-center font-serif italic text-accent-blue md:text-white text-lg md:text-xl">
-                    Customer Love
-                </p>
-            </div>
+            <div className="px-7 md:pl-9 lg:pl-14 xl:pl-24 2xl:pl-36">
+                <div className="bg-transparent md:bg-accent-blue w-32 md:w-64">
+                    <p className="flex justify-center font-serif italic text-accent-blue md:text-white text-lg md:text-xl">
+                        Customer Love
+                    </p>
+                </div>
             </div>
             <div>
-                <p ref={textRef} className="text-4xl px-7 font-medium md:text-6xl md:px-9 lg:pr-44 lg:pl-14 xl:pl-24 xl:pr-96 2xl:pl-36 2xl:pr-169 mt-1">
-                Our customer brands see consistent return on design investment
+                <p
+                    ref={textRef}
+                    className="text-4xl px-7 font-medium md:text-6xl md:px-9 lg:pr-44 lg:pl-14 xl:pl-24 xl:pr-96 2xl:pl-36 2xl:pr-169 mt-1">
+                    Our customer brands see consistent return on design investment
                 </p>
             </div>
             <div className="flex flex-col px-7 md:flex-row gap-5 md:px-9 xl:pr-96 lg:pl-14 xl:pl-24 2xl:pl-36 2xl:pr-169 my-20">
@@ -73,7 +72,7 @@ const Customerlove = () => {
 
             <div className="flex gap-14 px-7 md:px-9 xl:pl-24 xl:px-44 2xl:pl-36">
                 <div className="relative">
-                    <img src={custimage1} alt="linear gradiant" className="w-20 h-20 md:w-36 md:h-36"/>
+                    <img src={custimage1} alt="linear gradiant" className="w-20 h-20 md:w-36 md:h-36" />
                     <img
                         src={SLIDES[currentindex].url}
                         className="w-17.5 h-17.5 md:w-28 md:h-28 rounded-full absolute left-8 top-2 md:left-12 md:top-4"
@@ -95,7 +94,7 @@ const Customerlove = () => {
                     <img src={leftbtnarrow} alt="left btn" />
                 </button>
                 <button className="basis-auto" onClick={nextSlide}>
-                    <img src={rightbtnarrow} alt="right btn"/>
+                    <img src={rightbtnarrow} alt="right btn" />
                 </button>
             </div>
         </section>
