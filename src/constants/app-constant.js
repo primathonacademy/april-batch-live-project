@@ -63,23 +63,23 @@ export const IMPORTANT_PAGES = [
     }
 ];
 
-export const SLIDES =[
+export const SLIDES = [
     {
-        url:"http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnabarun.30ea2b3f.png&w=384&q=75",
-        name:"Mr. Nabarun Bhowmick",
-        desgination:"Chief Design Officer",
-        company:"Yumelabs"
+        url: 'http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fnabarun.30ea2b3f.png&w=384&q=75',
+        name: 'Mr. Nabarun Bhowmick',
+        desgination: 'Chief Design Officer',
+        company: 'Yumelabs'
     },
     {
-        url:"http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FabhinavKumar.16f33dcd.webp&w=640&q=75",
-        name:"Mr. Abhinav Kumar",
-        desgination:"Chief Technology Officer",
-        company:"Yumelabs"
+        url: 'http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FabhinavKumar.16f33dcd.webp&w=640&q=75',
+        name: 'Mr. Abhinav Kumar',
+        desgination: 'Chief Technology Officer',
+        company: 'Yumelabs'
     },
     {
-        url:"http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.912aa702.webp&w=256&q=75",
-        name:"Mrs. Regina Christy",
-        desgination:"Chief Digital Officer",
-        company:"Approlabs"
+        url: 'http://yume_labs.primathontech.co.in/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fman.912aa702.webp&w=256&q=75',
+        name: 'Mrs. Regina Christy',
+        desgination: 'Chief Digital Officer',
+        company: 'Approlabs'
     }
-]
+];

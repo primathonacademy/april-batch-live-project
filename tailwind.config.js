@@ -22,7 +22,7 @@ export default {
                 'fade-orange': '#E5C090',
                 'fade-white': '#F7F7F7',
                 'light-blue': '#E7E7FC',
-                'light-gray':'#DDDDDD',
+                'light-gray': '#DDDDDD',
                 'gray-bg-color': '#F4F8FF',
                 'pink-bg-color': '#FFEAF1',
                 'section-box-paragraph-color': '#7B7B7B',
@@ -30,8 +30,8 @@ export default {
                 'our-service-paragraph': '#696969'
             },
             screens: {
-                '3xl': '1920px',
-              },
+                '3xl': '1920px'
+            },
             borderRadius: {
                 '4xl': '1.75rem',
                 '5xl': '2rem',
@@ -48,7 +48,7 @@ export default {
                 225: '56.25rem',
                 300: '75rem',
                 375: '93.75rem',
-                17.5 : '4.375rem'
+                17.5: '4.375rem'
             },
 
             padding: {
@@ -75,7 +75,7 @@ export default {
                 112.25: '28.125rem',
                 150: '37.5rem',
                 187.5: '46.875rem',
-                17.5 : '4.375rem'
+                17.5: '4.375rem'
             },
             lineHeight: {
                 15: '3.75rem',
