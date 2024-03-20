@@ -13,7 +13,7 @@ const GetInTouch = () => {
         <div className="bg-fade-white pb-12 md:pb-16 lg:pb-20 xl:pb-24 2xl:pb-28">
             <section className="flex flex-col sm:flex-row w-full bg-accent-blue p-3 rounded-lg md:rounded-xl relative overflow-hidden">
                 <div className="absolute left-0 top-28 sm:top-[118px] lg:top-20 xl:top-[135px] 2xl:top-[167px] 3xl:top-43.5 flex flex-col gap-11 md:gap-[44px] lg:gap-[52px] xl:gap-[68px] 2xl:gap-24 w-full border-fade-white opacity-20">
-                {divHorizontalElements}
+                    {divHorizontalElements}
                 </div>
                 <div className="absolute top-0 -left-32 sm:-left-6 md:left-7 lg:left-8 xl:left-9 2xl:left-10 flex items-center gap-2 lg:gap-5 xl:gap-6 2xl:gap-7">
                     {divVerticalElements}
