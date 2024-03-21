@@ -16,8 +16,7 @@ export default {
                 'fade-black': '#0B1226',
                 'dark-gray': '#272727',
                 'brand-blue': '#0A66EC',
-                'accent-blue': '#0A66EC',
-                'dark-blue': '#253F9C',
+                'accent-blue': '#253F9C',
                 'brand-pink': '#F46997',
                 'fade-orange': '#E5C090',
                 'fade-white': '#F7F7F7',
@@ -66,7 +65,8 @@ export default {
                 '2.5xl': '1.688rem',
                 '7.5xl': '5rem',
                 '6.5xl': '4.125rem',
-                '4.5xl': '2.875rem'
+                '4.5xl': '2.875rem',
+                '5.5xl': '3.5rem'
             },
             height: {
                 212: '53.125rem',
