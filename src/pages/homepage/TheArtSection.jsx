@@ -147,7 +147,7 @@ const TheArt = () => {
                     <NavLink
                         to="/"
                         className="flex items-center justify-center cursor-pointer gap-8 2xs:gap-8 xs:gap-12 sm:gap-14 2xl:gap-12 py-1.5 xl:py-2 pl-5 sm:pl-7 xl:pl-10 bg-gray-bg-color rounded-full hover:bg-gradient-to-r hover:from-gray-bg-color hover:from-30% hover:to-pink-300">
-                        <h1 className="text-dark-blue text-xs sm:text-sm md:text-base xl:text-xl leading-5 md:leading-6 tracking-wide xs:tracking-wider xl:tracking-widest font-semibold">
+                        <h1 className="text-accent-blue text-xs sm:text-sm md:text-base xl:text-xl leading-5 md:leading-6 tracking-wide xs:tracking-wider xl:tracking-widest font-semibold">
                             ALL OUR SERVICE
                         </h1>
                         <div className="flex items-center justify-center rounded-full p-3.5 sm:p-4 xl:p-6 mr-1 xs:mr-1.5 xl:mr-2 bg-brand-blue hover:bg-gradient-to-r  hover:from-brand-blue hover:from-5% hover:to-brand-pink">
