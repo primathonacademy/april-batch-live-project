@@ -38,7 +38,7 @@ const ExploreService = () => {
                     </div>
 
                     <div className="mt-8 md:mt-16 w-full md:w-[400px] flex md:flex-col sm:flex-row items-center gap-3 relative service-item-1">
-                        <div className="w-full lg:h-80 md:h-72 h-64 relative">
+                        <div className="w-full lg:h-80 md:h-72 h-64 relative  bg-white rounded-xl">
                             <img
                                 src={ourServiceImage1}
                                 alt="service image"
@@ -53,7 +53,7 @@ const ExploreService = () => {
                                 </span>
                             </div>
                         </div>
-                        <div className="w-full  lg:h-80 md:h-72 h-64 relative">
+                        <div className="w-full lg:h-80 md:h-72 h-64 relative bg-white rounded-xl">
                             <img
                                 src={ourServiceImage2}
                                 alt="service image"
