@@ -27,3 +27,8 @@ export { default as gridimage } from '/src/assets/images/gridimage.png';
 export { default as researchImage } from '/src/assets/images/research-UI-image.png';
 export { default as percentIcon } from '/src/assets/icons/icon-percent.svg';
 export { default as brandAndValues } from '/src/assets/aboutuspage/brand-and-values.jpg';
+export { default as partnerimage1} from "./images/partnerimage-1.png"
+export { default as partnerimage2} from "./images/partnerimage-2.png"
+export { default as partnerimage3} from "./images/partnerimage-3.png"
+export { default as partnerimage4} from "./images/partnerimage-4.png"
+export { default as partnergrid} from "./images/grid5.png"
