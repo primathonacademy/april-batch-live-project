@@ -1,4 +1,5 @@
 import BrandAndValues from './BrandAndValues';
+import { Foundersection } from './Founder';
 import HeroSection from './HeroSection';
 
 const About = () => {
@@ -6,6 +7,7 @@ const About = () => {
         <>
             <HeroSection />
             <BrandAndValues />
+            <Foundersection/>
         </>
     );
 };
