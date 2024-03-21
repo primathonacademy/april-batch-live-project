@@ -4,10 +4,10 @@ const EngagementItem = (props) => {
     const { title1, title2, description } = props;
     return (
         <div className="bg-fade-white lg:h-96 h-80 w-full rounded-lg mb-4 lg:px-16 px-4 lg:pt-36 md:pt-24 pt-20">
-            <div className="text-fade-black font-poppins">
-                <h2 className="font-bold text-3xl">{title1}</h2>
-                <h2 className="font-bold text-3xl">{title2}</h2>
-            </div>
+            <h2 className="text-fade-black font-poppins font-bold text-3xl">
+                <span className="block">{title1}</span>
+                <span className="block">{title2}</span>
+            </h2>
             <p className="pt-6 text-header-gray font-roboto opacity-80 lg:pr-12 pr-0">{description}</p>
         </div>
     );
@@ -22,10 +22,10 @@ EngagementItem.propTypes = {
 const OurEngagement = () => {
     return (
         <div className="py-6 px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36">
-            <div className="lg:text-4xl text-3xl text-dark-gray font-poppins">
-                <h2>Our Engagement</h2>
-                <h2>Modals</h2>
-            </div>
+            <h2 className="lg:text-4xl text-3xl text-dark-gray font-poppins">
+                <span className="block">Our Engagement</span>
+                <span className="block">Modals</span>
+            </h2>
             <div className="lg:flex md:flex justify-center items-center gap-8 pt-10 pb-20">
                 <EngagementItem
                     title1="Monthly"
