@@ -9,10 +9,6 @@ const WorkComponent = (props) => {
     const { isHomePage } = props;
     const boxRefs = useRef([]);
 
-    WorkComponent.propTypes = {
-        isHomePage: PropTypes.bool.isRequired
-    };
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -139,6 +135,10 @@ const WorkComponent = (props) => {
             </section>
         </>
     );
+};
+
+WorkComponent.propTypes = {
+    isHomePage: PropTypes.bool.isRequired
 };
 
 export default WorkComponent;
