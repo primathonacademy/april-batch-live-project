@@ -86,7 +86,7 @@ const TheArt = () => {
                 <div className="w-full flex flex-shrink-0">
                     <div className="flex flex-no-wrap w-full">
                         <div className="w-full mr-4">
-                            <div className="image-container w-56 lg:w-auto">
+                            <div className="image-container w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
@@ -104,7 +104,7 @@ const TheArt = () => {
                             </div>
                         </div>
                         <div className="w-full mr-4">
-                            <div className="image-container w-56 lg:w-auto">
+                            <div className="image-container w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
@@ -122,7 +122,7 @@ const TheArt = () => {
                             </div>
                         </div>
                         <div className="w-full">
-                            <div className="image-container w-56 lg:w-auto">
+                            <div className="image-container w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
