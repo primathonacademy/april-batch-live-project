@@ -4,53 +4,55 @@ import SplitType from 'split-type';
 import { useGSAP } from '@gsap/react';
 import { gridlineBgImage, rightArrowIcon, technologyImage, theArtPosterImage } from '../../assets';
 import { NavLink } from 'react-router-dom';
+import useWindowResize from '../../utils/windowResizeUtils';
+import { SCREEN_SIZE } from '../../constants/app-constant';
 
 const TheArt = () => {
     const textRef = useRef(null);
+    const windowWidth = useWindowResize();
+
     useGSAP(() => {
-        const isMobile = window.innerWidth <= 768;
-
-        if (!isMobile) {
-            if (textRef.current) {
-                const splitText = new SplitType(textRef.current, {
-                    types: 'chars,words,lines'
-                });
-
-                gsap.from(splitText.chars, {
-                    opacity: 0.3,
-                    duration: 1.5,
-                    ease: 'power1.out',
-                    stagger: 1,
-                    scrollTrigger: {
-                        trigger: textRef.current,
-                        start: 'top 80%',
-                        end: 'top 50%',
-                        scrub: true,
-                        once: true
-                    }
-                });
-            }
+        if (textRef.current) {
+            const splitText = new SplitType(textRef.current, {
+                types: 'chars,words,lines'
+            });
+            gsap.from(splitText.chars, {
+                opacity: 0.3,
+                duration: 1.5,
+                ease: 'power1.out',
+                stagger: 1,
+                scrollTrigger: {
+                    trigger: textRef.current,
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    scrub: true,
+                    once: true
+                }
+            });
         }
     }, []);
 
     const containerRef = useRef(null);
     useGSAP(() => {
         const container = containerRef.current;
-        const images = container.querySelectorAll('.image-container');
-        gsap.from(images, {
-            y: 200,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.5,
-            scrollTrigger: {
-                trigger: container,
-                start: 'top 80%',
-                end: 'top 50%',
-                scrub: 1,
-                once: true
-            }
-        });
-    },[]);
+        const children = container.children;
+
+        if (windowWidth > SCREEN_SIZE.SM) {
+            gsap.from(children, {
+                y: 200,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.5,
+                scrollTrigger: {
+                    trigger: container,
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    scrub: 1,
+                    once: true
+                }
+            });
+        }
+    }, []);
 
     return (
         <div className="px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-12">
@@ -59,7 +61,7 @@ const TheArt = () => {
                     <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-5.2rem] xl:left-[-7.7rem] 2xl:left-0">
                         <img src={gridlineBgImage} alt="Grid image" className="md:w-full md:h-96" />
                     </div>
-                    <span className="text-accent-blue lg:text-white lg:bg-accent-blue md:text-white md:bg-dark-blue md:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
+                    <span className="text-accent-blue lg:text-white lg:bg-accent-blue md:text-accent-blue md:bg-dark-blue lg:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
                         The Art of the Possible
                     </span>
                     <p
@@ -82,11 +84,11 @@ const TheArt = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex overflow-x-auto overflow-hidden scrollbar-hide gap-4 w-full" ref={containerRef}>
+            <div className="flex overflow-x-auto overflow-hidden scrollbar-hide gap-4 w-full">
                 <div className="w-full flex flex-shrink-0">
-                    <div className="flex flex-no-wrap w-full">
+                    <div className="flex flex-no-wrap w-full" ref={containerRef}>
                         <div className="w-full mr-4">
-                            <div className="image-container w-56 lg:w-auto md:w-full">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
@@ -104,7 +106,7 @@ const TheArt = () => {
                             </div>
                         </div>
                         <div className="w-full mr-4">
-                            <div className="image-container w-56 lg:w-auto md:w-full">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
@@ -122,7 +124,7 @@ const TheArt = () => {
                             </div>
                         </div>
                         <div className="w-full">
-                            <div className="image-container w-56 lg:w-auto md:w-full">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
