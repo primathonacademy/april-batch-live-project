@@ -12,7 +12,7 @@ const Insights = () => {
                 <img src={NewsTechImage} alt="news tech image" className="object-cover w-full rounded-lg" />
             </div>
             <div className="lg:w-3/5">
-                <p className="text-section-box-paragraph-color text-xl font-poppins lg:font-semibold leading-5 py-6 lg:py-2 md:pb-3 lg:pb-4 2xl:pb-6">
+                <p className="text-section-box-paragraph-color xl:text-xl font-poppins lg:font-semibold leading-5 py-6 lg:py-2 md:pb-3 lg:pb-4 2xl:pb-6">
                     /01 / News Technology / 03 March 2022
                 </p>
                 <p className="text-[1.75rem] leading-8 lg:text-xl xl:text-3xl 2xl:text-4xl pb-10 lg:pb-5">
