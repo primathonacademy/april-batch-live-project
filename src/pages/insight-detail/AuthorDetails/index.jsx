@@ -29,7 +29,7 @@ const AuthorDetail = () => {
         <section className=" px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36 ">
             <div className="bg-fade-gray flex-1 h-px opacity-70" />
             <div className="flex items-center md:gap-5 gap-2">
-                <div className="bg-fade-gray flex-1 h-px opacity-70"/>
+                <div className="bg-fade-gray flex-1 h-px opacity-70" />
             </div>
             <h2 className="text-4xl font-medium md:mt-20 md:mb-12 mt-10 -mb-10 mx-0">Authors</h2>
 
@@ -61,7 +61,7 @@ const AuthorDetail = () => {
                 ))}
             </div>
 
-            <div className="bg-fade-gray flex-1 h-px opacity-70"/>
+            <div className="bg-fade-gray flex-1 h-px opacity-70" />
             <h2 className="text-black text-4xl font-poppins mb-16 max-w-64 pt-7">Latest Articles</h2>
             <section className="flex gap-4 mt-8 overflow-x-scroll scrollbar-hide flex-nowrap">
                 {displayedArticles?.map((item) => (
@@ -97,12 +97,12 @@ const AuthorDetail = () => {
             </section>
 
             <div className="flex items-center md:gap-5  gap-2">
-                <div className="md:bg-fade-gray flex-1 h-px opacity-70"/>
+                <div className="md:bg-fade-gray flex-1 h-px opacity-70" />
                 <button
                     className="flex justify-center items-center  cursor-pointer rounded-[50%] border-[none] bg-fade-white w-9 h-9"
                     onClick={handlePrevPage}
                     type="button">
-                    <img src={leftArrow} alt="Left Arrow"/>
+                    <img src={leftArrow} alt="Left Arrow" />
                 </button>
                 <button className=" w-9 h-9 rounded-[50%] border-[none]" onClick={handleNextPage} type="button">
                     <img src={rightArrow} alt="Left Arrow" />

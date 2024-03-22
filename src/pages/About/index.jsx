@@ -5,13 +5,12 @@ import Partnersection from './Partner';
 
 const About = () => {
     return (
-        <>
+        <div>
             <HeroSection />
             <BrandAndValues />
-            <Foundersection/>
+            <Foundersection />
             <Partnersection/>
-
-        </>
+        </div>
     );
 };
 
