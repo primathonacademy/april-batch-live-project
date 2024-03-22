@@ -1,5 +1,15 @@
+import InsightDetailsHeader from '../../pages/insight-detail/InsightDetailsHeader';
+import AuthorDetail from '../../pages/insight-detail/AuthorDetails';
+import ArticleSection from '../../pages/insight-detail/InsightDetailsBlogSection';
+
 const InsightDetail = () => {
-    return <div className="px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36">Welcome to Insight Detail</div>;
+    return (
+        <div>
+            <InsightDetailsHeader />
+            <ArticleSection />
+            <AuthorDetail />
+        </div>
+    );
 };
 
 export default InsightDetail;

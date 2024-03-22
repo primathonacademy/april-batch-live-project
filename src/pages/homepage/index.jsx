@@ -1,5 +1,5 @@
 import HeroSection from './HeroSection';
-import WorkComponent from './WorkComponent';
+import WorkComponent from '../../components/WorkComponent';
 import TheArt from './TheArtSection';
 import OurServiceSection from './OurServiceSection';
 import Customerlove from './Customerlove';
@@ -10,7 +10,7 @@ const Homepage = () => {
         <div>
             <HeroSection />
             <ExploreService />
-            <WorkComponent />
+            <WorkComponent isHomePage={true} />
             <OurServiceSection />
             <Customerlove />
             <TheArt />

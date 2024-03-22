@@ -1,10 +1,13 @@
+
+import StatementSection from "./StatementSection";
 import Unbiased from './Unbiased';
 
 const CaseStudy = () => {
     return (
-        <div>
-            <Unbiased />
-        </div>
+    <div>
+        <StatementSection/>
+        <Unbiased />
+    </div>
     );
 };
 

@@ -4,66 +4,68 @@ import SplitType from 'split-type';
 import { useGSAP } from '@gsap/react';
 import { gridlineBgImage, rightArrowIcon, technologyImage, theArtPosterImage } from '../../assets';
 import { NavLink } from 'react-router-dom';
+import useWindowResize from '../../utils/windowResizeUtils';
+import { SCREEN_SIZE } from '../../constants/app-constant';
 
 const TheArt = () => {
     const textRef = useRef(null);
+    const windowWidth = useWindowResize();
+
     useGSAP(() => {
-        const isMobile = window.innerWidth <= 768;
-
-        if (!isMobile) {
-            if (textRef.current) {
-                const splitText = new SplitType(textRef.current, {
-                    types: 'chars,words,lines'
-                });
-
-                gsap.from(splitText.chars, {
-                    opacity: 0.3,
-                    duration: 1.5,
-                    ease: 'power1.out',
-                    stagger: 1,
-                    scrollTrigger: {
-                        trigger: textRef.current,
-                        start: 'top 80%',
-                        end: 'top 50%',
-                        scrub: true,
-                        once: true
-                    }
-                });
-            }
+        if (textRef.current) {
+            const splitText = new SplitType(textRef.current, {
+                types: 'chars,words,lines'
+            });
+            gsap.from(splitText.chars, {
+                opacity: 0.3,
+                duration: 1.5,
+                ease: 'power1.out',
+                stagger: 1,
+                scrollTrigger: {
+                    trigger: textRef.current,
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    scrub: true,
+                    once: true
+                }
+            });
         }
     }, []);
 
     const containerRef = useRef(null);
     useGSAP(() => {
         const container = containerRef.current;
-        const images = container.querySelectorAll('.image-container');
-        gsap.from(images, {
-            y: 200,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.5,
-            scrollTrigger: {
-                trigger: container,
-                start: 'top 80%',
-                end: 'top 50%',
-                scrub: 1,
-                once: true
-            }
-        });
+        const children = container.children;
+
+        if (windowWidth > SCREEN_SIZE.SM) {
+            gsap.from(children, {
+                y: 200,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.5,
+                scrollTrigger: {
+                    trigger: container,
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    scrub: 1,
+                    once: true
+                }
+            });
+        }
     }, []);
 
     return (
         <div className="px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 pt-12">
             <section>
-                <div className="">
-                    <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-5.6rem] xl:left-[-7.7rem] 2xl:left-0">
+                <div>
+                    <div className="hidden lg:block lg:relative lg:h-0 lg:top-[-6.668rem] lg:left-[-5.2rem] xl:left-[-7.7rem] 2xl:left-0">
                         <img src={gridlineBgImage} alt="Grid image" className="md:w-full md:h-96" />
                     </div>
-                    <span className="text-accent-blue lg:text-white lg:bg-accent-blue md:text-white md:bg-dark-blue md:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
+                    <span className="text-accent-blue lg:text-white lg:bg-accent-blue md:text-accent-blue md:bg-dark-blue lg:px-12 lg:text-lg xl:text-xl italic font-serif py-2">
                         The Art of the Possible
                     </span>
                     <p
-                        className="text-3xl text-section-box-heading-color sm:text-4xl font-poppins font-medium 2xl:text-6xl mb-4 sm:mb-12 xl:mb-32 leading-9 pt-4 w-10/12"
+                        className="text-3xl text-fade-black sm:text-4xl font-poppins font-medium 2xl:text-6xl mb-4 sm:mb-12 xl:mb-32 leading-9 pt-4 w-9/12"
                         ref={textRef}>
                         Learn from our time in the trenches innovating for user advocacy.
                     </p>
@@ -71,9 +73,9 @@ const TheArt = () => {
             </section>
             <div className="relative flex pb-8">
                 <div
-                    className="aspect-[16/9] w-full rounded-lg md:rounded-xl object-cover bg-center"
+                    className="bg-cover lg:h-[35rem] h-auto w-full rounded-lg md:rounded-xl object-cover bg-center bg-no-repeat"
                     style={{ backgroundImage: `url(${theArtPosterImage})` }}>
-                    <div className="lg:pt-72 lg:pl-32 md:pt-32 md:pl-12 pt-6 pl-8 pb-4 pr-2">
+                    <div className="lg:pt-64 lg:pl-32 md:pt-32 md:pl-12 pt-16 pl-8 lg:pb-4 p-16 pr-2">
                         <span className="text-white lg:text-xl">/01/News Technology/03 March 2022</span>
                         <p className="text-fade-gray lg:text-xl">Great Place to Work 2022 Survey:</p>
                         <p className=" text-fade-gray lg:text-xl">
@@ -82,19 +84,19 @@ const TheArt = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex overflow-x-auto overflow-hidden scrollbar-hide gap-4 w-full" ref={containerRef}>
+            <div className="flex overflow-x-auto overflow-hidden scrollbar-hide gap-4 w-full">
                 <div className="w-full flex flex-shrink-0">
-                    <div className="flex flex-no-wrap w-11/10">
-                        <div className="md:w-auto mr-4">
-                            <div className="image-container w-56 lg:w-auto">
+                    <div className="flex flex-no-wrap w-full" ref={containerRef}>
+                        <div className="w-full mr-4">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
-                                    className="bg-light-blue rounded-md"
+                                    className="bg-light-blue w-full rounded-md"
                                 />
                                 <div className="mt-2">
                                     <h1 className="font-bold font-poppins text-lg pt-4">
-                                        /01 / News Technology / 03 March 2022
+                                        /01/ News Technology /03 March 2022
                                     </h1>
                                     <p className="font-roboto text-header-gray pt-4 text-lg lg:w-8/12">
                                         Great Place to Work 2022 Survey: Vincit is the best place to work in Finland,
@@ -103,8 +105,8 @@ const TheArt = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-auto mr-4">
-                            <div className="image-container w-56 lg:w-auto">
+                        <div className="w-full mr-4">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
@@ -112,7 +114,7 @@ const TheArt = () => {
                                 />
                                 <div className="mt-2">
                                     <h1 className="font-bold font-poppins text-lg pt-4">
-                                        /01 / News Technology / 03 March 2022
+                                        /01/ News Technology / 03 March 2022
                                     </h1>
                                     <p className="font-roboto text-header-gray pt-4 text-lg lg:w-8/12">
                                         Great Place to Work 2022 Survey: Vincit is the best place to work in Finland,
@@ -121,16 +123,16 @@ const TheArt = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-auto">
-                            <div className="image-container w-56 lg:w-auto">
+                        <div className="w-full">
+                            <div className="w-56 lg:w-auto md:w-full">
                                 <img
                                     src={technologyImage}
                                     alt="technology image"
-                                    className="bg-light-blue rounded-md"
+                                    className="bg-light-blue w-full rounded-md"
                                 />
                                 <div className="mt-2 pb-28">
                                     <h1 className="font-bold font-poppins text-lg pt-4">
-                                        /01 / News Technology / 03 March 2022
+                                        /01/ News Technology / 03 March 2022
                                     </h1>
                                     <p className="font-roboto text-header-gray pt-4 text-lg lg:w-8/12">
                                         Great Place to Work 2022 Survey: Vincit is the best place to work in Finland,

@@ -16,11 +16,10 @@ export default {
                 'fade-black': '#0B1226',
                 'dark-gray': '#272727',
                 'brand-blue': '#0A66EC',
-                'brand-pink': '#F46997',
                 'accent-blue': '#253F9C',
+                'brand-pink': '#F46997',
                 'fade-orange': '#E5C090',
                 'fade-white': '#F7F7F7',
-                'fade-blue-white': '#F4F8FF',
                 'light-blue': '#E7E7FC',
                 'light-gray': '#DDDDDD',
                 'gray-bg-color': '#F4F8FF',
@@ -48,7 +47,8 @@ export default {
                 225: '56.25rem',
                 300: '75rem',
                 375: '93.75rem',
-                17.5: '4.375rem'
+                17.5: '4.375rem',
+                55: '13.75rem'
             },
 
             padding: {
@@ -70,7 +70,8 @@ export default {
                 '2.5xl': '1.688rem',
                 '7.5xl': '5rem',
                 '6.5xl': '4.125rem',
-                '4.5xl': '2.875rem'
+                '4.5xl': '2.875rem',
+                '5.5xl': '3.5rem'
             },
             height: {
                 212: '53.125rem',
@@ -79,7 +80,8 @@ export default {
                 112.25: '28.125rem',
                 150: '37.5rem',
                 187.5: '46.875rem',
-                17.5: '4.375rem'
+                17.5: '4.375rem',
+                55: '13.75rem'
             },
             lineHeight: {
                 15: '3.75rem',
