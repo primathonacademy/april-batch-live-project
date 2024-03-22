@@ -43,3 +43,4 @@ export {default as partnergrid} from '/src/assets/images/grid5.png';
 export {default as nabarun} from '/src/assets/images/nabarun.png';
 export {default as pritamSaha} from '/src/assets/images/pritamSaha.png';
 export {default as author} from '/src/assets/images/author.png';
+export {default as statementBgImage} from '/src/assets/images/statementbg.png';

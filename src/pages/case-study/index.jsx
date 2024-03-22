@@ -1,5 +1,11 @@
+import StatementSection from "./StatementSection";
+
 const CaseStudy = () => {
-    return <div className="px-6 md:px-16 lg:px-20 xl:px-28 2xl:px-36">Welcome to Case Study</div>;
+    return (
+    <div>
+        <StatementSection/>
+    </div>
+    );
 };
 
 export default CaseStudy;
