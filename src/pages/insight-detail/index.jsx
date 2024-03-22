@@ -5,7 +5,7 @@ import ArticleSection from '../../pages/insight-detail/InsightDetailsBlogSection
 const InsightDetail = () => {
     return (
         <div>
-            <InsightDetailsHeader/>
+            <InsightDetailsHeader />
             <ArticleSection />
             <AuthorDetail />
         </div>
@@ -13,4 +13,3 @@ const InsightDetail = () => {
 };
 
 export default InsightDetail;
-

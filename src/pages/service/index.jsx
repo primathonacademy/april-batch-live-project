@@ -7,7 +7,7 @@ const Service = () => {
         <>
             <HeroSection />
             <ResearchSection />
-            <OurEngagement/>
+            <OurEngagement />
         </>
     );
 };

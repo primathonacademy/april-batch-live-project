@@ -48,9 +48,8 @@ export default {
                 300: '75rem',
                 375: '93.75rem',
                 17.5: '4.375rem',
-                55:'13.75rem'
+                55: '13.75rem'
             },
-
 
             padding: {
                 45: '11.25rem',
@@ -78,7 +77,7 @@ export default {
                 150: '37.5rem',
                 187.5: '46.875rem',
                 17.5: '4.375rem',
-                55:'13.75rem'
+                55: '13.75rem'
             },
             lineHeight: {
                 15: '3.75rem',
