@@ -61,6 +61,10 @@ export default {
                 37.25: '9.313rem',
                 169: '42.25rem'
             },
+            margin: {
+                18: '4.5rem',
+                22: '5.5rem'
+            },
             fontSize: {
                 xxs: '0.625rem',
                 '2.5xl': '1.688rem',
