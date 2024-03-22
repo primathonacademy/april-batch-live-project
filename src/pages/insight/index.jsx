@@ -57,12 +57,12 @@ const Insights = () => {
                 <div className="sm:px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 md:pb-16 lg:pb-20 xl:pb-28 2xl:pb-32">
                     <div
                         style={{ backgroundImage: `url(${theArtPosterImage})` }}
-                        className="aspect-square sm:aspect-[3/2] sm:rounded-lg lg:rounded-xl 2xl:rounded-2xl md:aspect-[2/1] xl:aspect-[3/1] bg-cover object-fit bg-center bg-no-repeat">
-                        <div className="flex flex-col justify-center gap-8 sm:gap-4 w-4/5 sm:w-2/3 lg:w-180 h-full items-start p-12 md:pl-20 lg:pl-28 xl:pl-36 font-poppins">
-                            <span className="text-white text-xl lg:text-2xl font-semibold">
+                        className="aspect-square sm:aspect-[3/2] sm:rounded-lg lg:rounded-xl 2xl:rounded-2xl md:aspect-[2/1] lg:aspect-[5/2] xl:aspect-[3/1] bg-cover object-fit bg-center bg-no-repeat">
+                        <div className="flex flex-col justify-center gap-6 sm:gap-4 w-11/12 sm:w-2/3 lg:w-180 h-full items-start p-12 md:pl-20 lg:pl-28 xl:pl-36 font-poppins">
+                            <span className="text-white text-lg lg:text-2xl font-semibold">
                                 /01 /News Technology / 03 March 2022
                             </span>
-                            <p className="text-slate-200 text-xl lg:text-2xl leading-6">
+                            <p className="text-slate-200 text-lg lg:text-2xl leading-6">
                                 Great Place to Work 2022 Survey: Vincit is the best place to work in Finland, again!
                             </p>
                         </div>
