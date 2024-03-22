@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 export const Foundersection = () => {
     function Card(props) {
-        const { url , paragraph , name , desgination} = props
+        const { url, paragraph, name, desgination } = props;
         return (
-            
             <div className="max-w-sm rounded overflow-hidden shadow-lg hover:bottom-0 group">
                 <div className="bg-[#ddd] py-14 flex justify-center items-center  relative">
                     <img className="h-55 w-55 rounded-full border-2 border-black " src={url} />
@@ -29,9 +28,9 @@ export const Foundersection = () => {
 
     Card.propTypes = {
         url: PropTypes.string.isRequired,
-        name:PropTypes.string.isRequired,
-        paragraph:PropTypes.string.isRequired,
-        desgination:PropTypes.string.isRequired
+        name: PropTypes.string.isRequired,
+        paragraph: PropTypes.string.isRequired,
+        desgination: PropTypes.string.isRequired
     };
     return (
         <section className="pt-14 pb-96">

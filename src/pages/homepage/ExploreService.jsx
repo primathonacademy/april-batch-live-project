@@ -37,7 +37,7 @@ const ExploreService = () => {
                     </p>
                     <span className="flex lg:mt-32 md:mt-16 mt-12 mb-6 items-center justify-center hover:bg-gradient-to-r from-fade-white from-30% to-pink-200 bg-gray-bg-color mx-auto py-2 w-44 lg:w-60 gap-0 lg:gap-12 rounded-full">
                         <h3 className="text-accent-blue font-semibold font-poppins text-sm">ALL OUR SERVICES</h3>
-                        <NavLink to='/service'>
+                        <NavLink to="/service">
                             <div className="bg-brand-blue rounded-full ml-2 p-3 hover:bg-gradient-to-r from-pink-300 from-30% to-brand-blue">
                                 <img
                                     src={rightArrowIcon}
