@@ -84,6 +84,7 @@ export default {
                 55: '13.75rem'
             },
             lineHeight: {
+                14: '3.4375rem',
                 15: '3.75rem',
                 22.5: '5.625rem',
                 24: '6rem',
