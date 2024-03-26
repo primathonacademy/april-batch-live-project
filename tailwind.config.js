@@ -95,7 +95,7 @@ export default {
                 13: '3.25rem'
             },
             spacing: {
-                46: '185px'
+                46: '11.5625rem'
             },
             backgroundImage: {
                 'gradient-linear':
