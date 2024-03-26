@@ -1,4 +1,5 @@
 import Strategy from '../../pages/case-study/Strategy/index';
+import { Productdesign } from './Productdesign';
 import StatementSection from "./StatementSection";
 import Unbiased from './Unbiased';
 
@@ -8,6 +9,7 @@ const CaseStudy = () => {
 			      <Strategy />
 			      <StatementSection />
             <Unbiased />
+            <Productdesign/>
 		    </div>
     );
 };
