@@ -87,7 +87,7 @@ const Research = () => {
                                             className="bg-[#E7E7FC] rounded-md w-full lg:w-[98%] h-40 object-cover"
                                         />
                                         <div className="">
-                                            <span className="flex lg:gap-12 md:gap-7 gap-6 text-dark-blue font-poppins md:font-semibold font-semibold lg:font-bold pt-6">
+                                            <span className="flex lg:gap-12 md:gap-7 gap-6 text-accent-blue font-poppins md:font-semibold font-semibold lg:font-bold pt-6">
                                                 <h1>#UX/UI</h1>
                                                 <h1>#DEVELOPMENT</h1>
                                             </span>
@@ -109,7 +109,7 @@ const Research = () => {
                                             className="bg-[#E7E7FC] rounded-md w-full lg:w-full h-40 object-cover"
                                         />
                                         <div>
-                                            <span className="flex lg:gap-12 md:gap-7 gap-6 text-dark-blue md:font-semibold font-semibold lg:font-bold font-poppins pt-6">
+                                            <span className="flex lg:gap-12 md:gap-7 gap-6 text-accent-blue md:font-semibold font-semibold lg:font-bold font-poppins pt-6">
                                                 <h1>#UX/UI</h1>
                                                 <h1>#DEVELOPMENT</h1>
                                             </span>
@@ -131,7 +131,7 @@ const Research = () => {
             <div className="flex justify-center mt-4 md:ml-20 lg:ml:96 w-full pb-16">
                 <NavLink to={'/service'}>
                     <span className="flex lg:mt-0 md:mt-12 px-2 items-center justify-center hover:bg-gradient-to-r from-[#F4F8FF] from-30% to-pink-200 bg-[#F4F8FF] md:mx-40 py-2 gap-6 rounded-full">
-                        <h1 className="text-dark-blue font-semibold font-poppins">ALL OUR SERVICES</h1>
+                        <h1 className="text-accent-blue font-semibold font-poppins">ALL OUR SERVICES</h1>
                         <div className="bg-brand-blue rounded-full ml-2 p-3 hover:bg-gradient-to-r from-pink-300 from-30% to-brand-blue">
                             <img src={rightArrowIcon} alt="arrow icon" className="w-4 h-4 hover:scale-125" />
                         </div>
