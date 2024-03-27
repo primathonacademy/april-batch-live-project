@@ -84,6 +84,7 @@ export default {
                 55: '13.75rem'
             },
             lineHeight: {
+                14: '3.4375rem',
                 15: '3.75rem',
                 22.5: '5.625rem',
                 24: '6rem',
@@ -92,6 +93,9 @@ export default {
                 12.25: '3.063rem',
                 18: '4.5rem',
                 13: '3.25rem'
+            },
+            spacing: {
+                46: '11.5625rem'
             },
             backgroundImage: {
                 'gradient-linear':
