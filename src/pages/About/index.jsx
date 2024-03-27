@@ -9,7 +9,7 @@ const About = () => {
             <HeroSection />
             <BrandAndValues />
             <Foundersection />
-            <Partnersection/>
+            <Partnersection />
         </div>
     );
 };
