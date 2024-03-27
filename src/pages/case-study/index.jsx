@@ -1,6 +1,7 @@
 import Strategy from '../../pages/case-study/Strategy/index';
 import StatementSection from './StatementSection';
 import Unbiased from './Unbiased';
+import Project from '../../pages/case-study/Project/index';
 
 const CaseStudy = () => {
     return (
@@ -8,6 +9,7 @@ const CaseStudy = () => {
             <Strategy />
             <StatementSection />
             <Unbiased />
+            <Project />
         </div>
     );
 };
