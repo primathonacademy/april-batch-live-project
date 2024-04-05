@@ -12,7 +12,6 @@ const CaseStudy = () => {
             <StatementSection />
              <Productdesign/>
             <Unbiased />
-		    </div>
             <Project />
         </div>
     );
