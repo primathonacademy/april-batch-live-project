@@ -173,7 +173,7 @@ Paragraph.propTypes = {
     children: PropTypes.node.isRequired
 };
 
-Box.PropTypes = {
+Box.propTypes = {
     children: PropTypes.node.isRequired,
     color: PropTypes.string.isRequired
 };
