@@ -36,7 +36,7 @@ const HeroSection = () => {
                     </p>
                 </div>
             </div>
-            <div className="h-159 xl:h-auto md:aspect-[2/1] px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 overflow-hidden bg-white py-16">
+            <div className="h-159 md:h-auto md:aspect-[3/2] lg:aspect-[2/1] px-9 md:px-16 lg:px-20 xl:px-28 2xl:px-36 overflow-hidden bg-white py-16">
                 <img
                     src={GroupWorkingImage}
                     alt="discussion in group with their laptop sitting on chairs"
