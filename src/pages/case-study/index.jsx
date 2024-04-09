@@ -4,6 +4,7 @@ import StatementSection from "./StatementSection";
 import HeroSection from './HeroSection';
 import Unbiased from './Unbiased';
 import Project from '../../pages/case-study/Project/index';
+import Branding from './Branding';
 
 const CaseStudy = () => {
     return (
@@ -12,6 +13,7 @@ const CaseStudy = () => {
             <StatementSection />
             <Productdesign/>
             <Strategy />
+            <Branding />
             <Unbiased />
             <Project />
         </div>
