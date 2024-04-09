@@ -3,6 +3,7 @@ import HeroSection from './HeroSection';
 import StatementSection from './StatementSection';
 import Unbiased from './Unbiased';
 import Project from '../../pages/case-study/Project/index';
+import Branding from './Branding';
 
 const CaseStudy = () => {
     return (
@@ -10,6 +11,7 @@ const CaseStudy = () => {
             <HeroSection />
             <StatementSection />
             <Strategy />
+            <Branding />
             <Unbiased />
             <Project />
         </>
