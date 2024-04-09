@@ -1,6 +1,6 @@
 import Strategy from '../../pages/case-study/Strategy/index';
 import { Productdesign } from './Productdesign';
-import StatementSection from "./StatementSection";
+import StatementSection from './StatementSection';
 import HeroSection from './HeroSection';
 import Unbiased from './Unbiased';
 import Project from '../../pages/case-study/Project/index';
@@ -11,7 +11,7 @@ const CaseStudy = () => {
         <div>
             <HeroSection />
             <StatementSection />
-            <Productdesign/>
+            <Productdesign />
             <Strategy />
             <Branding />
             <Unbiased />
